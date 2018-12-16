@@ -1936,16 +1936,6 @@ Team style
     height: 100vh;
 }
 
-.image-intro {
-    padding-left: 50px;
-}
-
-.image-intro img {
-    max-width: 400px;
-    max-height: 900px;
-    border-radius: 7px;
-}
-
 /*Accordion*/
 
 .accordion-header {
@@ -2470,9 +2460,5 @@ print {
     #popinlate {
         font-size: 16px;
         text-align: center;
-    }
-
-    .image-intro {
-    padding-left: 0;
     }
 }

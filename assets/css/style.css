@@ -2471,4 +2471,8 @@ print {
         font-size: 16px;
         text-align: center;
     }
+
+    .image-intro {
+    padding-left: 0;
+    }
 }

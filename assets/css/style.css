@@ -2464,7 +2464,7 @@ print {
     h1 {
         font-size: 40px;
         text-align: center;
-        line-height: 3em;
+        padding-bottom: 50px;
     }
 
     #popinlate {

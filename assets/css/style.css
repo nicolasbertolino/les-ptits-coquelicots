@@ -1949,7 +1949,6 @@ Team style
     display: block;
     color: var(--black);
     font-weight: 600;
-    font-size: 17px;
 }
 
 .accordion-header a:hover {

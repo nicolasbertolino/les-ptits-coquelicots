@@ -1633,18 +1633,14 @@ Portfolio cards
     font-weight: 700;
 }
 
-.galerie {
-    overflow: hidden;
-}
-
 .galerie img {
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .galerie:hover img {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: translateY(-5px);;
+    transform: translateY(-5px);;
 }
 
 /*

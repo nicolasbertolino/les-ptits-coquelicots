@@ -1181,6 +1181,7 @@ Header style
     position: relative;
     height: 100%;
     border-collapse: collapse;
+    border-right: 1px solid rgba(0, 0, 0, .03);
 }
 
 .left-nav .nav-container .nav-parent .row-navbar {

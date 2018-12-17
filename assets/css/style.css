@@ -2258,6 +2258,7 @@ Team style
 }
 
 .tile.is-child {
+    background-color: #fff;
     margin: 0 !important;
 }
 
@@ -2371,7 +2372,7 @@ print {
     padding-bottom: 3px;
 }
 
-.important {
+.note {
     font-weight: 500;
     text-align: center;
 }

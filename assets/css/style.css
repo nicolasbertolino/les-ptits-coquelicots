@@ -487,6 +487,10 @@ b {
     margin-top: 100px !important;
 }
 
+.font600 {
+    font-weight: 600;
+}
+
 .bg-default {
     background-color: #f7f7f7 !important;
 }

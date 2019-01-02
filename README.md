@@ -9,3 +9,5 @@ It features the following:
  - Side navigation bar
  - Photos gallery with a filter function
  - A contact form using formspree
+
+ Very simple but clean display.

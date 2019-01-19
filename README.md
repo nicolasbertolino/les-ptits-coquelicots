@@ -1,7 +1,7 @@
 # Les p'tits coquelicots
 [www.lesptitscoquelicots.com](https://www.lesptitscoquelicots.com/)
 
-This is my very first website. It was initially made on Ruby on rails, as a training purpose, before I decided it could fit as plain HTML CSS JS static website.
+My very first website. It was initially made on Ruby on rails, as a training purpose, before I decided it could fit as plain HTML CSS JS static website.
 
 It features the following:
 

@@ -1183,7 +1183,7 @@ Header style
     table-layout: fixed;
     width: 100%;
     position: relative;
-    height: 100%;
+    height: 75%;
     border-collapse: collapse;
     border-right: 1px solid rgba(0, 0, 0, .03);
 }

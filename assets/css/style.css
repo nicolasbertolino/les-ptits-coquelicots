@@ -89,7 +89,7 @@ body {
     font-weight: 400;
     color: var(--black);
     line-height: 1.8;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
     background-image: url(../images/dots.png);
     background-repeat: repeat;
@@ -100,7 +100,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 button:focus {
@@ -1214,7 +1214,7 @@ Header style
     font-size: .88rem;
     font-weight: 400;
     padding: .6rem 2rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
 }
 
@@ -1252,7 +1252,7 @@ Dropdown menu styles
 Smart form customization
 */
 .smart-forms {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .smart-forms .tagline span {
@@ -1314,7 +1314,7 @@ Smart form customization
 }
 
 .smart-forms .input-hint {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .smart-forms input:checked+.checkbox,
@@ -1360,7 +1360,7 @@ Smart form customization
 .smart-forms button,
 .smart-forms select,
 .smart-forms textarea {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .smart-forms .switch>input:checked+.switch-label {
@@ -1525,7 +1525,7 @@ Smart form customization
     margin-left: 8px;
     letter-spacing: 0;
     margin-bottom: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 /*
@@ -1619,11 +1619,11 @@ Portfolio cards
 }
 
 .cbp-l-caption-desc {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .cbp-l-filters-button .cbp-filter-item {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     padding: 0px 10px;
     border: 0px;
@@ -1756,7 +1756,7 @@ Team style
 
 .footer p {
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
     opacity: 0.8;
     margin-bottom: 20px;
 }
@@ -1887,7 +1887,7 @@ Team style
 .hero>.container p {
     font-size: 1.5em;
     font-weight: 600;
-    font-family: 'Open Sans';
+    font-family: 'Rubik';
 }
 
 .herolamam {

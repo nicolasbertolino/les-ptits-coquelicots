@@ -863,6 +863,12 @@ header {
   margin: 5vh 0 10vh;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Contact Form */
 .form-body {
   display: flex;
@@ -929,6 +935,13 @@ button span:hover {
 .contact-infos i {
   font-size: 2rem;
   margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-infos {
+    grid-row: 1/2;
+    margin-bottom: 5vh;
+  }
 }
 
 /* Footer */

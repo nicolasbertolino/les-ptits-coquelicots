@@ -884,7 +884,7 @@ textarea {
   font-size: 1rem;
   letter-spacing: 0.05rem;
   line-height: 1.5;
-  border-color: #444;
+  border: 2px solid #444;
 }
 
 textarea {

@@ -530,7 +530,7 @@ header {
   }
 }
 
-/* Comments */
+/* Livre d'or */
 .comments {
   position: relative;
   min-height: 470px;
@@ -885,7 +885,6 @@ textarea {
   letter-spacing: 0.05rem;
   line-height: 1.5;
   border-color: #444;
-  /* border-width: 1px; */
 }
 
 textarea {

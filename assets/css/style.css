@@ -152,7 +152,7 @@ h5 {
   grid-template-columns: 10vw 1fr 10vw;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   .wrapper {
     grid-template-columns: 3vw 1fr 3vw;
   }
@@ -187,7 +187,7 @@ nav ul {
   margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   nav ul {
     display: none;
   }
@@ -242,7 +242,7 @@ nav ul li a:hover,
 /* Hamburger */
 .hamburger {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -250,7 +250,7 @@ nav ul li a:hover,
   display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   .hamburger {
     display: block;
   }
@@ -268,17 +268,17 @@ nav ul li a:hover,
   transition: 0.3s;
 }
 
-.active .bar1 {
+.change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-7px, 6px);
   transform: rotate(-45deg) translate(-7px, 6px);
 }
 
-.active .bar2 {
+.change .bar2 {
   transform: translateX(-36px);
   opacity: 0;
 }
 
-.active .bar3 {
+.change .bar3 {
   -webkit-transform: rotate(45deg) translate(-6px, -6px);
   transform: rotate(45deg) translate(-6px, -6px);
 }
@@ -393,7 +393,7 @@ header {
   height: 3.8rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   .left-ribbon,
   .right-ribbon {
     display: none;
@@ -409,7 +409,7 @@ header {
   grid-column: 3/4;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   .left-panel,
   .right-panel {
     display: none;
@@ -495,7 +495,7 @@ header {
   margin-top: 10vh;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   .introduction {
     grid-template-columns: 1fr;
   }
@@ -655,6 +655,12 @@ header {
 
 .button-box a:hover {
   background-color: whitesmoke;
+}
+
+@media screen and (max-width: 460px) {
+  .button-box {
+    padding: 50px;
+  }
 }
 
 /* La Mam */
@@ -1008,7 +1014,7 @@ footer ul li a:hover::before {
   transform: rotate(-360deg);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1022px) {
   footer {
     grid-template-columns: 3vw 1fr 3vw;
   }
@@ -1018,6 +1024,6 @@ footer ul li a:hover::before {
   }
 
   .ti-angle-up {
-    right: 3vw;
+    right: 5vw;
   }
 }

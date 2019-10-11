@@ -1,6 +1,6 @@
 // Hamburger
 function toggleBurger(x) {
-  x.classList.toggle("active");
+  x.classList.toggle("change");
 }
 
 // Toggle Responsive Menu

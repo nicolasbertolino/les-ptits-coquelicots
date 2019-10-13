@@ -169,7 +169,7 @@ main {
 .overlay4,
 .overlay5 {
   position: absolute;
-  width: 20%;
+  width: 21%;
   height: 100%;
   top: 0;
   transform: scaleY(0);

@@ -1,5 +1,5 @@
 // Pages Transition
-const swup = new Swup();
+// const swup = new Swup();
 
 // Hamburger
 function toggleBurger(x) {

@@ -163,7 +163,7 @@ main {
 }
 
 /* Pages Transition */
-.overlay1,
+/* .overlay1,
 .overlay2,
 .overlay3,
 .overlay4,
@@ -233,7 +233,7 @@ html.is-animating .transition-swipe3,
 html.is-animating .transition-swipe4,
 html.is-animating .transition-swipe5 {
   transform: scaleY(1);
-}
+} */
 
 /* Navbar */
 nav {

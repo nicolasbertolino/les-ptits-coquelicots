@@ -162,6 +162,79 @@ main {
   grid-column: 2/3;
 }
 
+/* Pages Transition */
+.overlay1,
+.overlay2,
+.overlay3,
+.overlay4,
+.overlay5 {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  z-index: 4;
+}
+
+.overlay1 {
+  background-color: #f05624;
+  left: 0;
+}
+
+.overlay2 {
+  background-color: #f6b8d1;
+  left: 20%;
+}
+
+.overlay3 {
+  background-color: #304875;
+  left: 40%;
+}
+
+.overlay4 {
+  background-color: #53bfa9;
+  left: 60%;
+}
+
+.overlay5 {
+  background-color: #fdbf4d;
+  left: 80%;
+}
+
+.transition-swipe1,
+.transition-swipe2,
+.transition-swipe3,
+.transition-swipe4,
+.transition-swipe5 {
+  transition: .8s cubic-bezier(0.77, 0, 0.175, 1);
+  transform: scaleY(0);
+}
+
+.transition-swipe2 {
+  transition-delay: .1s;
+}
+
+.transition-swipe3 {
+  transition-delay: .2s;
+}
+
+.transition-swipe4 {
+  transition-delay: .3s;
+}
+
+.transition-swipe5 {
+  transition-delay: .4s;
+}
+
+html.is-animating .transition-swipe1,
+html.is-animating .transition-swipe2,
+html.is-animating .transition-swipe3,
+html.is-animating .transition-swipe4,
+html.is-animating .transition-swipe5 {
+  transform: scaleY(1);
+}
+
 /* Navbar */
 nav {
   height: 80px;

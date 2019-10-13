@@ -1,3 +1,6 @@
+// Pages Transition
+const swup = new Swup();
+
 // Hamburger
 function toggleBurger(x) {
   x.classList.toggle("change");
@@ -63,6 +66,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// Pages Transition
-const swup = new Swup();

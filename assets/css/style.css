@@ -143,7 +143,7 @@ h5 {
   left: 0;
   width: 100%;
   height: 0.5rem;
-  background-color: rgba(240, 86, 36, 0.3);
+  background-color: #f0562450;
 }
 
 /* Layout */
@@ -163,13 +163,13 @@ main {
 }
 
 /* Pages Transition */
-/* .overlay1,
+.overlay1,
 .overlay2,
 .overlay3,
 .overlay4,
 .overlay5 {
   position: absolute;
-  width: 20.1%;
+  width: 20%;
   height: 100%;
   top: 0;
   transform: scaleY(0);
@@ -233,7 +233,7 @@ html.is-animating .transition-swipe3,
 html.is-animating .transition-swipe4,
 html.is-animating .transition-swipe5 {
   transform: scaleY(1);
-} */
+}
 
 /* Navbar */
 nav {
@@ -760,7 +760,7 @@ header {
   left: 0;
   padding: 1rem;
   margin: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   color: #fcf6ea;
   text-align: justify;
   transform: translateY(-10%);
@@ -875,7 +875,7 @@ header {
 }
 
 .quote-body {
-  border-color: rgba(240, 86, 36, 0.3);
+  border-color: #f0562450;
   border-style: solid;
   border-width: 0 0 0 4px;
   padding: 1em 1.5em;

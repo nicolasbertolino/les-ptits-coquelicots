@@ -1,6 +1,3 @@
-// Pages Transition
-const swup = new Swup();
-
 // Hamburger
 function toggleBurger(x) {
   x.classList.toggle("change");

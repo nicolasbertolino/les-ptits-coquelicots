@@ -30,6 +30,23 @@ body {
   outline: none;
 }
 
+/* Custom Cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f05624;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
+  transition: .2s ease-out;
+}
+
+.expand {
+  transform: scale(1.7);
+  transition: .2s ease-out;
+}
+
 /* Paragraphs */
 p {
   letter-spacing: 0.05rem;
@@ -699,11 +716,14 @@ header {
   vertical-align: middle;
 }
 
-.active,
-.dot:hover {
+.active {
   background-color: #f05624;
   height: 15px;
   width: 15px;
+}
+
+.dot:hover {
+  background-color: #f05624;
 }
 
 /* To the Mam */

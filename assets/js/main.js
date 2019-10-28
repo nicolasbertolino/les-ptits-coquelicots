@@ -1,3 +1,18 @@
+const cursor = document.querySelector(".cursor");
+let link = document.querySelector(".logo");
+
+document.addEventListener("mousemove", e => {
+  cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+});
+
+link.addEventListener("mouseenter", e => {
+  cursor.classList.toggle("expand");
+});
+
+link.addEventListener("mouseleave", e => {
+  cursor.classList.remove("expand");
+});
+
 // Hamburger
 function toggleBurger(x) {
   x.classList.toggle("change");

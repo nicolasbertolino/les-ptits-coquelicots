@@ -583,7 +583,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 @media screen and (max-width: 1022px) {
@@ -596,28 +596,14 @@ header {
   width: 100%;
 }
 
-.who {
-  margin: 3rem;
-  text-align: right;
+.quisommesnous {
   max-width: 70%;
-  float: right;
+  align-self: center;
 }
 
 @media screen and (max-width: 1400px) {
-  .who {
-    margin: 0 0 3rem 0;
+  .quisommesnous {
     max-width: 100%;
-    float: none;
-  }
-}
-
-@media screen and (max-width: 1150px) {
-  .who {
-    margin: 0;
-  }
-
-  .rmv1150 {
-    display: none;
   }
 }
 
@@ -625,7 +611,7 @@ header {
 .comments {
   position: relative;
   min-height: 470px;
-  margin: 10vh 0;
+  margin: 15vh 0 10vh;
 }
 
 .comments::before {

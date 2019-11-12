@@ -562,7 +562,7 @@ header {
 }
 
 .button-box a:hover {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 @media screen and (max-width: 460px) {

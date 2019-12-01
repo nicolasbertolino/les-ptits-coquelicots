@@ -1,3 +1,4 @@
+// Cursor
 const cursor = document.querySelector(".cursor");
 let link = document.querySelector(".logo");
 

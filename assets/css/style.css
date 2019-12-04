@@ -55,6 +55,12 @@ textarea:focus {
   transition: .2s ease-out;
 }
 
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
 .expand {
   transform: scale(1.7);
   transition: .2s ease-out;

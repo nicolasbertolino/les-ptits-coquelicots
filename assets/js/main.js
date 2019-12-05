@@ -1,3 +1,11 @@
+// Preloader
+window.onload = function () {
+  window.setTimeout(function () {
+    document.getElementById("preloader").style.display = "none";
+    document.getElementById("wrapper").style.opacity = 1;
+  }, 100)
+}
+
 // Cursor
 const cursor = document.querySelector(".cursor");
 let link = document.querySelector(".logo");

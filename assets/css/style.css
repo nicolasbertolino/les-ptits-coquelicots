@@ -56,15 +56,15 @@ textarea:focus {
   transition: .2s ease-out;
 }
 
+.condense {
+  transform: scale(.5);
+  border-width: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .cursor {
     display: none;
   }
-}
-
-.expand {
-  transform: scale(1.7);
-  transition: .2s ease-out;
 }
 
 /* Anchor Links */

@@ -1,7 +1,8 @@
 /* Todo
 - stop scrolling when on menu
 - color scheme
-- page transition */
+- page transition
+- parallax on shapes */
 
 /* Foundations */
 body,
@@ -50,6 +51,7 @@ textarea:focus {
   height: 20px;
   border: 2px solid var(--red);
   border-radius: 50%;
+  mix-blend-mode: difference;
   position: absolute;
   z-index: 9999;
   pointer-events: none;
@@ -310,7 +312,7 @@ nav ul li a:hover,
 
 /* Responsive Menu */
 .menu {
-  position: absolute;
+  position: fixed;
   top: -100%;
   right: 0;
   bottom: 0;

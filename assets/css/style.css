@@ -19,8 +19,12 @@ body {
   color: var(--black);
 }
 
-::selection,
 ::-moz-selection {
+  background: var(--black);
+  color: #ffffff;
+}
+
+::selection {
   background: var(--black);
   color: #ffffff;
 }

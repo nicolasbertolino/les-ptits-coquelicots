@@ -55,7 +55,6 @@ textarea:focus {
   height: 20px;
   border: 2px solid var(--red);
   border-radius: 50%;
-  mix-blend-mode: difference;
   position: absolute;
   z-index: 9999;
   pointer-events: none;
@@ -67,7 +66,7 @@ textarea:focus {
   border-width: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .cursor {
     display: none;
   }

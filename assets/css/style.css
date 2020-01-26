@@ -671,10 +671,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 1rem;
-  /* font-family: "Baloo", sans-serif; */
   font-weight: bold;
-  /* font-size: 1.2rem; */
-  /* border: 5px solid var(--red); */
   height: 600px;
 }
 

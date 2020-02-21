@@ -16,13 +16,6 @@ document.addEventListener("mousemove", e => {
   );
 });
 
-document.addEventListener("wheel", e => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;"
-  );
-});
-
 document.querySelectorAll("a").forEach(link => {
   link.addEventListener("mouseenter", () => cursor.classList.add("condense"));
   link.addEventListener("mouseleave", () =>

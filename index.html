@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/themify-icons.css" />
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo&display=swap" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Sketch&display=swap" />
     <link rel="stylesheet" href="https://use.typekit.net/gfg0nhv.css">
   </head>
 
@@ -19,6 +19,7 @@
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <!-- Wrapper -->
+    <div id="top"></div>
     <div id="wrapper" class="wrapper">
       <!-- Shapes -->
       <div class="left-panel">
@@ -30,7 +31,7 @@
       <main>
         <!-- Navbar -->
         <nav>
-          <a href="/" class="logo"><img src="assets/images/logo.png"></a>
+          <a href="/" class="logo"><img src="assets/images/logo2.png"></a>
           <ul>
             <li><a href="/a-propos">La Mam</a></li>
             <li><a href="/reglement-interieur">Règlement</a></li>
@@ -156,8 +157,12 @@
             <h4>Martine de Gainza</h4>
             <h5>Rédactrice en chef, Assistantes maternelles magazine</h5>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1)">
+            <img src="assets/images/arrow.svg" alt="arrow">
+          </a>
+          <a class="next" onclick="plusSlides(1)">
+            <img src="assets/images/arrow.svg" alt="arrow">
+          </a>
           <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -196,10 +201,17 @@
         <!-- Copyright -->
         <p class="copyright">©2019 Les p'tits coquelicots. Fait avec <i class="ti-heart"></i> par <a href="https://www.nicolasbertolino.com">Nicolas Bertolino</a></p>
         <!-- Back To Top -->
-        <i class="ti-angle-up" onclick="topFunction()"></i>
+        <a class="back-top" href="#top">
+          <img src="assets/images/circle.svg" alt="circle-top" class="circle">
+          <img src="assets/images/arrow.svg" alt="arrow-top" class="arrow">
+        </a>
       </footer>
+      <div id="cursor" class="Cursor"></div>
     </div>
     <!-- Scripts -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="assets/js/cursor.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

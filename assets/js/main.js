@@ -1,30 +1,38 @@
 // Preloader
-window.onload = function () {
-  window.setTimeout(function () {
+window.onload = function() {
+  window.setTimeout(function() {
     document.getElementById("preloader").style.display = "none";
     document.getElementById("wrapper").style.opacity = 1;
-  }, 100)
-}
+  }, 100);
+};
 
 // Cursor
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", e => {
-  cursor.setAttribute("style", "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;")
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;"
+  );
 });
 
 document.addEventListener("wheel", e => {
-  cursor.setAttribute("style", "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;")
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;"
+  );
 });
 
-document.querySelectorAll("a").forEach((link) => {
+document.querySelectorAll("a").forEach(link => {
   link.addEventListener("mouseenter", () => cursor.classList.add("condense"));
-  link.addEventListener("mouseleave", () => cursor.classList.remove("condense"));
+  link.addEventListener("mouseleave", () =>
+    cursor.classList.remove("condense")
+  );
 });
 
 // Hamburger
-function toggleBurger(x) {
-  x.classList.toggle("change");
+function toggleBurger(e) {
+  e.classList.toggle("change");
 }
 
 // Toggle Responsive Menu
@@ -34,6 +42,18 @@ const navShow = () => {
 
   burger.addEventListener("click", () => {
     menu.classList.toggle("show");
+    let tl = new TimelineLite();
+    tl.staggerFrom(
+      ".menu a",
+      1,
+      {
+        y: "50%",
+        opacity: 0,
+        ease: Expo.easeOut
+      },
+      0.1,
+      "+=0.5"
+    );
   });
 };
 
@@ -44,19 +64,23 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -83,7 +107,7 @@ function openTab(evt, tabName) {
 }
 
 // Back To Top
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }

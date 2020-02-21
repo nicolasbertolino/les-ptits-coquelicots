@@ -14,18 +14,18 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #fcf6ea;
-  font-family: "noto-sans", sans-serif;
+  background-color: var(--background);
+  font-family: serenity, sans-serif;
   color: var(--black);
 }
 
 ::-moz-selection {
-  background: var(--black);
+  background: var(--secondary);
   color: #ffffff;
 }
 
 ::selection {
-  background: var(--black);
+  background: var(--secondary);
   color: #ffffff;
 }
 
@@ -43,8 +43,8 @@ textarea:focus {
 
 /* Variables */
 :root {
-  --red: #cf4532;
-  --blue: #304875;
+  --primary: #cf4532;
+  --secondary: #47a96f;
   --black: #444444;
   --background: #fcf6ea;
 }
@@ -53,16 +53,16 @@ textarea:focus {
 .cursor {
   width: 34px;
   height: 34px;
-  border: 2px solid var(--red);
+  border: 2px solid var(--primary);
   border-radius: 50%;
   position: absolute;
   z-index: 9999;
   pointer-events: none;
-  transition: .1s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .condense {
-  transform: scale(.3);
+  transform: scale(0.3);
   border-width: 17px;
 }
 
@@ -72,8 +72,14 @@ textarea:focus {
   }
 }
 
+p {
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+
 /* Anchor Links */
 a {
+  font-size: 21px;
   text-decoration: none;
   color: inherit;
   position: relative;
@@ -123,7 +129,7 @@ ul {
 }
 
 .ul li {
-  letter-spacing: 0.05rem;
+  font-size: 1.3em;
   padding-left: 0.5rem;
   line-height: 1.5;
 }
@@ -133,33 +139,40 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Baloo", sans-serif;
+  font-family: serenity, sans-serif;
   font-weight: normal;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: bold;
   margin: 5vh 0 0;
   line-height: 1;
-  color: var(--red);
+  color: var(--primary);
 }
 
 h2 {
-  font-size: 1.7rem;
-  line-height: 1.2;
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 1;
+  margin: 0.5em 0;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 
 h4 {
+  font-weight: bold;
   font-size: 1.2rem;
   margin: 0;
 }
 
 h5 {
+  font-size: 1.1rem;
   margin-top: 0.5rem;
 }
 
@@ -176,11 +189,12 @@ h5 {
 .subtitle::after {
   content: "";
   position: absolute;
-  top: 60%;
+  bottom: 5%;
   left: 0;
   width: 100%;
   height: 0.5rem;
-  background-color: rgba(207, 69, 50, 0.3);
+  background-color: var(--primary);
+  opacity: 0.3;
 }
 
 /* Preloader */
@@ -246,8 +260,8 @@ nav ul {
 
 nav ul li,
 .menu ul li {
-  font-family: "Baloo", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   letter-spacing: 0.07rem;
   margin-left: 1.5rem;
   padding-top: 0.5rem;
@@ -255,7 +269,7 @@ nav ul li,
 
 nav ul li a,
 .menu ul li a {
-  border-top: 0.5rem solid var(--red);
+  border-top: 0.5rem solid var(--primary);
   transition: 0.2s ease-in-out;
   padding-top: 0.5rem;
 }
@@ -266,7 +280,7 @@ nav ul li a:hover,
 }
 
 .onpage {
-  border-top-color: var(--blue);
+  border-top-color: var(--secondary);
 }
 
 /* Hamburger */
@@ -483,7 +497,7 @@ header {
   left: 6rem;
   font-family: "Trebuchet MS";
   font-size: 20rem;
-  color: var(--red);
+  color: var(--primary);
   opacity: 0.3;
   z-index: -1;
 }
@@ -527,22 +541,21 @@ header {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  font-weight: bold;
-  font-size: 3rem;
-  transition: 0.3s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  width: 4vw;
+  transition: 0.3s;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover,
 .next:hover {
-  color: var(--red);
+  transform: scale(1.1);
+}
+
+.prev img {
+  transform: rotate(180deg);
 }
 
 .dots {
@@ -565,19 +578,19 @@ header {
 }
 
 .active {
-  background-color: var(--red);
+  background-color: var(--primary);
   height: 15px;
   width: 15px;
 }
 
 .dot:hover {
-  background-color: var(--red);
+  background-color: var(--primary);
 }
 
 /* To the Mam */
 .button-box {
   padding: 60px;
-  background-color: #304875;
+  background-color: var(--secondary);
   background-image: url(../images/shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -586,10 +599,11 @@ header {
 }
 
 .button-box a {
+  font-size: 1.2em;
   display: inline-block;
   padding: 10px 40px;
   background-color: #fcf6ea;
-  font-family: "Baloo", sans-serif;
+  font-family: serenity, sans-serif;
   color: var(--black);
   text-align: center;
   transition: 0.3s ease-in-out;
@@ -704,7 +718,7 @@ header {
   width: 0;
   height: 2px;
   background-color: var(--black);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .tablink:hover::after {
@@ -782,7 +796,7 @@ header {
 
 /* Gallery */
 .band {
-  background-color: var(--blue);
+  background-color: var(--secondary);
   color: #fcf6ea;
   padding: 2rem;
   font-weight: bold;
@@ -850,7 +864,7 @@ button {
   padding: 30px 60px;
   border: none;
   cursor: pointer;
-  background-color: #304875;
+  background-color: var(--secondary);
   background-image: url(../images/shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -860,7 +874,7 @@ button span {
   display: inline-block;
   padding: 10px 40px;
   background-color: #fcf6ea;
-  font-family: "Baloo", sans-serif;
+  font-family: serenity, sans-serif;
   font-size: 1rem;
   color: var(--black);
   text-align: center;
@@ -902,7 +916,7 @@ footer {
 }
 
 footer div {
-  font-family: "Baloo", sans-serif;
+  font-family: serenity, sans-serif;
   font-weight: normal;
   grid-column: 2/3;
   align-self: center;
@@ -935,25 +949,40 @@ footer ul li a:hover::before {
   position: absolute;
   bottom: 0;
   left: 10vw;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0;
 }
 
 /* Back To Top */
-.ti-angle-up {
+.back-top {
   position: absolute;
   bottom: 60px;
   right: 10vw;
-  font-size: 1.5rem;
-  background-color: var(--red);
-  padding: 1rem;
-  color: #fcf6ea;
-  cursor: pointer;
-  transition: 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 5vw;
+  transform: rotate(-90deg);
 }
 
-.ti-angle-up:hover {
+.circle,
+.arrow {
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+
+.back-top:hover .circle {
+  transform: scale(1.1);
+}
+
+.back-top:hover .arrow {
   transform: rotate(-360deg);
+}
+
+.arrow {
+  width: 2vw;
+  height: 2vw;
 }
 
 @media screen and (max-width: 1022px) {
@@ -965,7 +994,7 @@ footer ul li a:hover::before {
     left: 3vw;
   }
 
-  .ti-angle-up {
+  .back-top {
     right: 5vw;
   }
 }

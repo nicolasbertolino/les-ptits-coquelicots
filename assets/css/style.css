@@ -953,6 +953,10 @@ footer ul li a:hover::before {
   letter-spacing: 0;
 }
 
+.copyright a {
+  font-size: 1rem;
+}
+
 /* Back To Top */
 .back-top {
   position: absolute;

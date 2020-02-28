@@ -23,6 +23,11 @@
       href="https://fonts.googleapis.com/css?family=Londrina+Solid:300,400&display=swap"
     />
     <link rel="stylesheet" href="https://use.typekit.net/gfg0nhv.css" />
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
   </head>
 
   <body>
@@ -660,5 +665,15 @@
     </div>
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script>
+      // Preloader
+      window.onload = function() {
+        window.setTimeout(function() {
+          document.body.style.overflow = "visible";
+          document.getElementById("preloader").style.display = "none";
+          document.getElementById("loaded").style.opacity = 1;
+        }, 5000);
+      };
+    </script>
   </body>
 </html>

@@ -1,11 +1,3 @@
-// Preloader
-window.onload = function() {
-  window.setTimeout(function() {
-    document.getElementById("preloader").style.display = "none";
-    document.getElementById("loaded").style.opacity = 1;
-  }, 5000);
-};
-
 // Cursor
 const cursor = document.querySelector(".cursor");
 

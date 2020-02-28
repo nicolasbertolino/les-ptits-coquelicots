@@ -2,8 +2,8 @@
 window.onload = function() {
   window.setTimeout(function() {
     document.getElementById("preloader").style.display = "none";
-    document.getElementById("wrapper").style.opacity = 1;
-  }, 100);
+    document.getElementById("loaded").style.opacity = 1;
+  }, 5000);
 };
 
 // Cursor
@@ -34,6 +34,7 @@ const navShow = () => {
   const menu = document.querySelector(".menu");
 
   burger.addEventListener("click", () => {
+    document.body.classList.toggle("lock");
     menu.classList.toggle("show");
     let tl = new TimelineLite();
     tl.staggerFrom(
@@ -66,7 +67,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("slide");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
@@ -80,7 +81,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "flex";
   dots[slideIndex - 1].className += " active";
 }
 
@@ -91,7 +92,7 @@ function openTab(evt, tabName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
+  tablinks = document.getElementsByClassName("tabs__link");
   for (i = 0; i < x.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" ontab", "");
   }
@@ -104,3 +105,9 @@ function openTab(evt, tabName) {
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // }
+
+// window.addEventListener("scroll", function() {
+//   if (window.scrollTop > 1) {
+//     alert("scrolled");
+//   }
+// });

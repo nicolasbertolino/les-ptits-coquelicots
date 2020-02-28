@@ -1,128 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="La Mam — Maison d'Assistantes Maternelles — Les p'tits coquelicots est un mode de garde à Cazères pour vos enfants." />
-    <title>Les p'tits coquelicots — Maison d'Assistantes Maternelles à Cazères</title>
+    <meta
+      name="description"
+      content="La Mam — Maison d'Assistantes Maternelles — Les P'tits Coquelicots est un mode de garde à Cazères pour vos enfants."
+    />
+    <title>
+      Les P'tits Coquelicots — Maison d'Assistantes Maternelles à Cazères
+    </title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/themify-icons.css" />
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina+Sketch&display=swap" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Londrina+Solid:300,400&display=swap"
+    />
     <link rel="stylesheet" href="https://use.typekit.net/gfg0nhv.css" />
   </head>
 
   <body>
-    <!-- Preloader -->
-    <div id="preloader"></div>
+    <!-- Navbar -->
+    <nav>
+      <a href="/" class="logo"><img src="assets/images/logo.png"/></a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/photos">Photos</a></li>
+        <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
+        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
+        <li><a class="onpage" href="/contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleBurger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+    <!-- Responsive Menu -->
+    <div class="menu">
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/photos">Photos</a></li>
+        <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
+        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
+        <li><a class="onpage" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Content -->
+    <main>
+      <!-- Header -->
+      <div class="hero-contact"></div>
+      <div>
+        <h1 style="padding-left: 10vw;">Contact</h1>
+      </div>
+      <!-- Contact Form -->
+      <div class="contact">
+        <form
+          action="https://formspree.io/mamlesptitscoquelicots@orange.fr"
+          method="POST"
+        >
+          <input type="hidden" name="_language" value="fr" />
+          <div class="form-body">
+            <label>
+              <input
+                type="text"
+                name="Nom"
+                id="sendername"
+                placeholder="Nom"
+                spellcheck="false"
+              />
+            </label>
+            <label class="field prepend-icon">
+              <input
+                type="email"
+                name="Email"
+                id="contact_nom"
+                placeholder="Email"
+                spellcheck="false"
+              />
+            </label>
+            <label class="field prepend-icon">
+              <textarea
+                name="Message"
+                id="contact_email"
+                placeholder="Message"
+                rows="7"
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn">Envoyer</button>
+          </div>
+        </form>
+        <div class="contact-infos">
+          <div>
+            <i class="ti-email"></i>
+            <h3>
+              Une question, un renseignement ?<br />N'hésitez-pas à nous écrire.
+            </h3>
+          </div>
+          <div>
+            <i class="ti-location-pin"></i>
+            <h3>23 avenue de Toulouse App 6,<br />31220 Cazères-sur-Garonne</h3>
+          </div>
+          <div>
+            <i class="ti-mobile"></i>
+            <h3>05 62 01 21 33</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <ul>
+          <li><a href="/photos">Photos</a></li>
+          <li><a href="/reglement-interieur">Règlement intérieur</a></li>
+          <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.ladepeche.fr/article/2017/02/09/2513722-deux-passionnees-de-l-enfance-ouvrent-un-lieu-d-accueil.html"
+              >Ils parlent de nous</a
+            >
+          </li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Copyright -->
+      <p class="copyright">
+        ©2020 Les P'tits Coquelicots. Fait avec <i class="ti-heart"></i> par
+        <a href="https://www.nicolasbertolino.com">Nicolas Bertolino</a>
+      </p>
+      <!-- Back To Top -->
+      <a class="back-top" href="#">
+        <img src="assets/images/circle.svg" alt="circle-top" class="circle" />
+        <img src="assets/images/arrow.svg" alt="arrow-top" class="arrow" />
+      </a>
+    </footer>
     <!-- Custom Cursor -->
     <div class="cursor"></div>
-    <!-- Wrapper -->
-    <div id="wrapper" class="wrapper">
-      <!-- Shapes -->
-      <div class="left-panel">
-          <img class="pos3" src="assets/images/shapes/shape3.png" alt="">
-          <img class="pos8" src="assets/images/shapes/shape8.png" alt="">
-          <img class="pos10" src="assets/images/shapes/shape10.png" alt="">
-          <img class="pos11" src="assets/images/shapes/shape11.png" alt="">
-      </div>
-      <main>
-        <!-- Navbar -->
-        <nav>
-          <a href="/" class="logo"><img src="assets/images/logo.png"></a>
-          <ul>
-            <li><a href="/a-propos">La Mam</a></li>
-            <li><a href="/reglement-interieur">Règlement</a></li>
-            <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-            <li><a href="/galerie">Galerie</a></li>
-            <li><a class="onpage" href="/contact">Contact</a></li>
-          </ul>
-          <!-- Hamburger -->
-          <div class="hamburger" onclick="toggleBurger(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </nav>
-        <!-- Responsive Menu -->
-        <div class="menu">
-          <ul>
-            <li><a href="/a-propos">La Mam</a></li>
-            <li><a href="/reglement-interieur">Règlement</a></li>
-            <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-            <li><a href="/galerie">Galerie</a></li>
-            <li><a class="onpage" href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Header -->
-        <header>
-          <img src="assets/images/header-projet.jpg">
-        </header>
-        <!-- Main Content -->
-        <h1>Contact</h1>
-        <!-- Contact Form -->
-        <div class="contact">
-          <form action="https://formspree.io/mamlesptitscoquelicots@orange.fr" method="POST">
-            <input type="hidden" name="_language" value="fr" />
-            <div class="form-body">
-              <label>
-                <input type="text" name="Nom" id="sendername" placeholder="Nom" spellcheck="false">
-              </label>
-              <label class="field prepend-icon">
-                <input type="email" name="Email" id="contact_nom" placeholder="Email" spellcheck="false">
-              </label>
-              <label class="field prepend-icon">
-                <textarea name="Message" id="contact_email" placeholder="Message" rows="7"></textarea>
-              </label>
-            </div>
-            <div class="form-footer">
-            <button type="submit" class="form-button"><span>Envoyer</span></button>
-            </div>
-          </form>
-          <div class="contact-infos">
-            <div>
-              <i class="ti-email"></i>
-              <h4>Une question, un renseignement ?<br />N'hésitez-pas à nous écrire.</h4>
-            </div>
-            <div>
-                <i class="ti-location-pin"></i>
-                <h4>23 avenue de Toulouse App 6,<br />31220 Cazères-sur-Garonne</h4>
-            </div>
-            <div>
-              <i class="ti-mobile"></i>
-              <h4>05 62 01 21 33</h4>
-            </div>
-          </div>
-        </div>
-      </main>
-      <!-- Shapes -->
-      <div class="right-panel">
-          <img class="pos2" src="assets/images/shapes/shape14.png" alt="">
-          <img class="pos4" src="assets/images/shapes/shape4.png" alt="">
-          <img class="pos9" src="assets/images/shapes/shape9.png" alt="">
-      </div>
-      <!-- Footer -->
-      <footer>
-        <div>
-          <ul>
-            <li><a href="/a-propos">À propos</a></li>
-            <li><a target="_blank" href="https://www.ladepeche.fr/article/2017/02/09/2513722-deux-passionnees-de-l-enfance-ouvrent-un-lieu-d-accueil.html">Ils parlent de nous</a></li>
-            <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-            <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-            <li><a href="/galerie">Photos</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Copyright -->
-        <p class="copyright">©2019 Les p'tits coquelicots. Fait avec <i class="ti-heart"></i> par <a href="https://www.nicolasbertolino.com">Nicolas Bertolino</a></p>
-        <!-- Back To Top -->
-        <a class="back-top" href="#" onclick="topFunction()">
-          <img src="assets/images/circle.svg" alt="circle-top" class="circle">
-          <img src="assets/images/arrow.svg" alt="arrow-top" class="arrow">
-        </a>
-      </footer>
-    </div>
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
   </body>

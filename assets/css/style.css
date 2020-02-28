@@ -1259,14 +1259,16 @@ footer ul li a:hover::before {
   margin-top: 2vh;
   width: calc(200px + 40vw);
   height: 5px;
-  transform: scaleX(0);
   transform-origin: right;
   background-color: var(--black);
   animation: lineAnim 2s 3.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 }
 
 @keyframes lineAnim {
+  from {
+    transform: scaleX(0);
+  }
   to {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }

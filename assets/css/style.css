@@ -1244,7 +1244,7 @@ footer ul li a:hover::before {
 .line {
   margin-top: 2vh;
   width: calc(200px + 40vw);
-  height: 5px;
+  height: 4px;
   transform: scaleX(0);
   transform-origin: right;
   background-color: var(--black);

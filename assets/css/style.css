@@ -1094,13 +1094,25 @@ footer ul li a:hover::before {
 }
 
 #preloader svg {
-	width: calc(200px + 40vw);
+  width: calc(200px + 20vw);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes animate {
 	to {
 		stroke-dashoffset: 0;
 	}
+}
+
+#preloader svg::before {
+  content: "lol";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 50px;
 }
 
 #L_path {
@@ -1232,27 +1244,11 @@ footer ul li a:hover::before {
 #uelicots_path5 {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: animate 3s 3.4s ease forwards;
+  animation: animate 2s 3.6s ease forwards;
 }
 
 #uelicots_i_path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: animate 2s 3.3s ease forwards;
-}
-
-.line {
-  margin-top: 2vh;
-  width: calc(200px + 40vw);
-  height: 4px;
-  transform: scaleX(0);
-  transform-origin: right;
-  background-color: var(--black);
-  animation: lineAnim 2s 3.4s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-}
-
-@keyframes lineAnim {
-  to {
-    transform: scaleX(1);
-  }
+  animation: animate 2s 3.5s ease forwards;
 }

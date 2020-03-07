@@ -97,9 +97,3 @@ function openTab(evt, tabName) {
 //   document.body.scrollTop = 0;
 //   document.documentElement.scrollTop = 0;
 // }
-
-// window.addEventListener("scroll", function() {
-//   if (window.scrollTop > 1) {
-//     alert("scrolled");
-//   }
-// });

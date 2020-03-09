@@ -47,7 +47,7 @@ textarea:focus {
 :root {
   --primary: #cf4532;
   --secondary: #47a96f;
-  --black: #444444;
+  --black: #333333;
   --background: #fcf6ea;
 }
 
@@ -1045,7 +1045,7 @@ footer ul li a:hover::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #111;
+  background-color: var(--black);
   transform: translateY(0);
   animation: preloaderAnim 4s ease forwards;
 }
@@ -1063,7 +1063,7 @@ footer ul li a:hover::before {
 }
 
 #loaded {
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity 1s;
 }
 

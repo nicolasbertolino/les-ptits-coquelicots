@@ -387,55 +387,11 @@ header div:first-child {
   }
 }
 
-/* Rail Text */
-.rail {
-  background-color: var(--secondary);
-  color: var(--background);
-  border-top: 3px solid var(--black);
-  border-bottom: 3px solid var(--black);
-  margin: 15vh 0vw 0;
-}
-
-@media screen and (max-width: 850px) {
-  .rail {
-    margin-bottom: 10vh;
-  }
-}
-
-.rail div {
-  font-size: calc(2rem + 1vw);
-  font-weight: 300;
-  font-family: "Londrina Solid";
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-evenly;
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 1rem 0;
-}
-
-@media screen and (max-width: 1062px) {
-  .rail div span:nth-child(2),
-  .rail div span:nth-child(3) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 732px) {
-  .rail div span:nth-child(4),
-  .rail div span:nth-child(5) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .rail div span:nth-child(6),
-  .rail div span:nth-child(7) {
-    display: none;
-  }
-}
-
 /* Testimonials */
+.testimonials__title {
+  margin: 15vh auto 0;
+}
+
 .testimonials {
   position: relative;
   min-height: 470px;
@@ -467,6 +423,10 @@ header div:first-child {
 }
 
 @media screen and (max-width: 850px) {
+  .testimonials__title {
+    margin-bottom: 10vh;
+  }
+
   .testimonials::before {
     left: 0;
   }
@@ -1085,12 +1045,26 @@ footer ul li a:hover::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background);
+  background-color: #111;
+  transform: translateY(0);
+  animation: preloaderAnim 4s ease forwards;
+}
+
+@keyframes preloaderAnim {
+  from {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
 }
 
 #loaded {
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 #preloader svg {
@@ -1105,14 +1079,6 @@ footer ul li a:hover::before {
 	to {
 		stroke-dashoffset: 0;
 	}
-}
-
-#preloader svg::before {
-  content: "lol";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  font-size: 50px;
 }
 
 #L_path {

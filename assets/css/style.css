@@ -14,7 +14,6 @@ body {
   background-color: var(--background);
   font-family: serenity, sans-serif;
   color: var(--black);
-  transition: opacity 1s;
 }
 
 .lock {

@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/gfg0nhv.css" />
     <style>
       body {
-        overflow: hidden;
+        overflow-y: hidden;
       }
     </style>
   </head>
@@ -660,10 +660,10 @@
       // Preloader
       window.onload = function() {
         window.setTimeout(function() {
-          document.body.style.overflow = "visible";
+          document.body.style.overflowY = "visible";
           document.getElementById("preloader").style.display = "none";
           document.getElementById("loaded").style.opacity = 1;
-        }, 4000);
+        }, 1000);
       };
     </script>
   </body>

@@ -1047,7 +1047,7 @@ footer ul li a:hover::before {
   align-items: center;
   background-color: var(--background);
   transform: translateY(0);
-  animation: preloaderAnim 4s ease forwards;
+  animation: preloaderAnim 3s ease forwards;
 }
 
 @keyframes preloaderAnim {
@@ -1063,7 +1063,7 @@ footer ul li a:hover::before {
 }
 
 #preloader img {
-  animation: preloaderImg 4s ease forwards;
+  animation: preloaderImg 3s ease forwards;
 }
 
 @keyframes preloaderImg {

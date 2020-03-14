@@ -34,4 +34,5 @@ All the images displayed are the propriety of *Les P'tits Coquelicots* as no oth
 
 I am very grateful for the opportunity I had to work on this project; it allowed me to grasp a first experience in terms of design and development, to see how a website works, and how - even though tidious at first - hosting a website works.
 
+
 [www.lesptitscoquelicots.com](https://www.lesptitscoquelicots.com/)

@@ -1071,11 +1071,11 @@ footer ul li a:hover::before {
     filter: grayscale(1);
     opacity: 0;
   }
-  50% {
+  33% {
     filter: grayscale(1);
     opacity: 1;
   }
-  75% {
+  66% {
     filter: grayscale(0);
     opacity: 1;
   }

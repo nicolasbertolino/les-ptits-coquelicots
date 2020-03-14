@@ -284,7 +284,7 @@ header div:first-child {
 /* À Propos */
 .about {
   position: relative;
-  margin-top: 10vh;
+  margin-top: 15vh;
   display: grid;
   grid-template-columns: 0.4fr 1fr;
 }

@@ -1,4 +1,6 @@
-![Logo of the project](https://www.lesptitscoquelicots.com/assets/images/logo.png)
+<p align="center">
+  <img src="https://www.lesptitscoquelicots.com/assets/images/logo.png">
+</p>
 
 # Les P'tits Coquelicots
 

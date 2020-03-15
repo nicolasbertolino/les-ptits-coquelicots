@@ -248,7 +248,6 @@ header div:first-child {
   min-height: 70vh;
   background-image: url(../images/4.jpg);
   background-size: cover;
-  
 }
 
 .hero-contact {
@@ -706,7 +705,7 @@ header div:first-child {
 
 @media screen and (max-width: 414px) {
   #projet__h1 {
-    font-size: calc(2.3rem + 7vw);;
+    font-size: calc(2.3rem + 7vw);
   }
 }
 

@@ -12,10 +12,10 @@ I am very proud of what I've done in terms of design and accessibility. The webs
 
 It features the following:
 
- - Responsive layout (mobile-friendly)
+ - Responsive layout
  - Testimonials carousel
  - Tabs navigation
- - Photos gallery
+ - Photos gallery with CSS grids
  - Contact form (using [formspree](https://formspree.io/))
 
 ## Assets

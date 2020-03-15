@@ -4,7 +4,7 @@
 
 # Les P'tits Coquelicots
 
-This is the first website I ever worked on. I initially created it in fall 2018 with Ruby on rails as training for the framework, before I decided it could fit as a plain static website. That's when I remade it, about a year later, gave it a new look even: the one which can be seen today.
+Les P'tits Coquelicots is the first website I ever worked on. I initially created it in fall 2018 with Ruby on rails as training for the framework, before I decided it could fit as a plain static website. That's when I remade it, about a year later, gave it a new look even: the one which can be seen today.
 
 I am very proud of what I've done in terms of design and accessibility. The website runs smoothly and offers a good view of all the informations that needed to be displayed.
 

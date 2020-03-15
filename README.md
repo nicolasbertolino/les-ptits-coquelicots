@@ -12,7 +12,7 @@ I am very proud of what I've done in terms of design and accessibility. The webs
 
 It features the following:
 
- - Responsive layout
+ - Responsive layout (mobile-friendly)
  - Testimonials carousel
  - Tabs navigation
  - Photos gallery with CSS grids

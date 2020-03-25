@@ -212,7 +212,6 @@ main > div {
 header {
   min-height: calc(100vh - 80px);
   margin-top: 80px;
-  /* width: 100vw; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -222,10 +221,34 @@ header div:first-child {
   align-self: center;
 }
 
-.hero-main {
+.hero {
   min-height: 70vh;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.hero-main {
   background-image: url(../images/1.jpg);
   background-size: cover;
+  
+}
+
+.hero-projet {
+  background-image: url(../images/4.jpg);
+  background-size: cover;
+}
+
+.hero-reglement {
+  margin: 80px 3vw -80px;
+  background-image: url(../images/bglamam.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-contact {
+  margin: 80px 3vw -80px;
+  background-image: url(../images/bgprojets.jpg);
+  background-size: cover;
+  background-position-x: center;
 }
 
 @media screen and (max-width: 850px) {
@@ -237,27 +260,6 @@ header div:first-child {
   .hero-main {
     margin-top: 5vh;
   }
-}
-
-.hero-reglement {
-  min-height: 70vh;
-  background-image: url(../images/bglamam.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-projet {
-  min-height: 70vh;
-  background-image: url(../images/4.jpg);
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-}
-
-.hero-contact {
-  min-height: 70vh;
-  background-image: url(../images/bgprojets.jpg);
-  background-size: cover;
-  background-position-x: center;
 }
 
 .coquelicots {
@@ -716,7 +718,7 @@ header div:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 7rem;
-  margin: 5vh 0 5vh 10vw;
+  margin: 5vh 0 5vh;
 }
 
 @media screen and (max-width: 1024px) {

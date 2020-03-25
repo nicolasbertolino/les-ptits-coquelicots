@@ -5,7 +5,7 @@ function leaveTransition() {
   
   function contentAnimation() {
     gsap.from("header div:first-child", { duration: 0.5, opacity: 0, ease: "power3" });
-    gsap.to("header div:last-child", { duration: 1, clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: "power3" });
+    gsap.to(".hero", { duration: 1, clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: "power3" });
     gsap.from("main", { duration: 0.5, opacity: 0, ease: "power3" });
   }
   

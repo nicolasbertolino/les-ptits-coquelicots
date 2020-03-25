@@ -6,9 +6,9 @@ function leaveTransition() {
   }
   
   function contentAnimation() {
-    gsap.from("header div:first-child", { duration: 0.5, opacity: 0, ease: "power3" });
-    gsap.to(".hero", { duration: 1, delay: 0.2, clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: "power3" });
-    gsap.from("main", { duration: 0.5, opacity: 0, ease: "power3" });
+    gsap.from("header div:first-child", { duration: 0.5, delay: 0.2, opacity: 0, ease: "power3" });
+    gsap.to(".hero", { duration: 0.5, delay: 0.2, clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)", ease: "power3" });
+    gsap.from("main", { duration: 0.5, delay: 0.3, opacity: 0, ease: "power3" });
   }
   
   function delay(n) {

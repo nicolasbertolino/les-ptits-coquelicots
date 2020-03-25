@@ -13,6 +13,7 @@ I am very proud of what I've done in terms of design and accessibility. The webs
 It features the following:
 
  - Responsive layout (mobile-friendly)
+ - Smooth pages transition with [barba.js](https://barba.js.org/)
  - Testimonials carousel
  - Tabs navigation
  - Photos gallery with CSS grids

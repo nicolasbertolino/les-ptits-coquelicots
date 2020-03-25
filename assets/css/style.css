@@ -246,7 +246,7 @@ header div:first-child {
 .hero {
   min-height: 70vh;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  animation: heroAnim 1s 0.1s forwards;
+  animation: heroAnim 0.7s 0.1s forwards;
 }
 
 @keyframes heroAnim {

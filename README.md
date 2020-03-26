@@ -20,11 +20,7 @@ It features the following:
 
 ## Assets
 
-The website, even though is targeting parents, is supposed to remind of the world of children, hence the very soft background color and the playful primary and secondary colors, respectively bright red and green.
-
-- background: #fcf6ea;
-- red: #cf4532;
-- green: #47a96f;
+The website, even though is targeting parents, is supposed to remind of the world of children, hence the very soft beige background color and the playful primary and secondary colors, respectively bright red and green.
 
 As for the fonts, I used [Serenity](https://fonts.adobe.com/fonts/serenity) for the paragraphs and [Londrina Solid](https://fonts.google.com/specimen/Londrina+Solid) for the headers.
 
@@ -34,6 +30,6 @@ All the images displayed are the propriety of *Les P'tits Coquelicots* as no oth
 
 ## Thank you
 
-I am very grateful for the opportunity I had to work on this project; it allowed me to grasp a first experience in terms of design and development, to see how a website works, and how - even though tidious at first - hosting a website works.
+I am very grateful for the opportunity I had to work on this project; it allowed me to grasp a first experience in terms of design and development and to understand how a website works, from creating to hosting it.
 
 [www.lesptitscoquelicots.com](https://www.lesptitscoquelicots.com/)

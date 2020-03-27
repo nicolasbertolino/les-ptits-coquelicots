@@ -17,7 +17,7 @@ body {
 }
 
 .lock {
-  overflow: hidden;
+  overflow-y: hidden !important;
 }
 
 ::-moz-selection {
@@ -894,6 +894,26 @@ nav ul li a:hover,
   }
 }
 
+@media screen and (max-width: 414px) {
+  .hamburger {
+    position: fixed;
+    top: unset;
+    right: unset;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: var(--background);
+    padding: 2em 1.5em 1.5em;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .bar1,
 .bar2,
 .bar3 {
@@ -971,6 +991,13 @@ footer {
   position: relative;
 }
 
+@media screen and (max-width: 414px) {
+  footer {
+    height: 380px;
+    padding-bottom: 80px;
+  }
+}
+
 footer div {
   font-family: serenity, sans-serif;
   font-weight: normal;
@@ -1012,6 +1039,12 @@ footer ul li a:hover::before {
 
 .copyright a {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 414px) {
+  .copyright {
+    bottom: 80px;
+  }
 }
 
 /* Back To Top */

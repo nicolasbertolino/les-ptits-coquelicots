@@ -1,6 +1,3 @@
-/* Todo
-- page transition */
-
 /* Foundations */
 body,
 html {
@@ -203,7 +200,7 @@ main {
   grid-template-columns: 3vw 1fr 3vw;
   margin-top: 80px;
   opacity: 0;
-  animation: mainAnim 1s 0.1s forwards;
+  animation: mainAnim 2s 0.1s forwards;
 }
 
 @keyframes mainAnim {
@@ -231,7 +228,7 @@ header div:first-child {
   margin: 0 3vw;
   align-self: center;
   opacity: 0;
-  animation: headerAnim 1s 0.1s forwards;
+  animation: headerAnim 2s 0.1s forwards;
 }
 
 @keyframes headerAnim {
@@ -245,13 +242,13 @@ header div:first-child {
 
 .hero {
   min-height: 70vh;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   animation: heroAnim 0.7s 0.1s forwards;
 }
 
 @keyframes heroAnim {
   from {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   }
   to {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

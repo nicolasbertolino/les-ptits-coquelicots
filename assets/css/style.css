@@ -199,17 +199,6 @@ main {
   display: grid;
   grid-template-columns: 3vw 1fr 3vw;
   margin-top: 80px;
-  opacity: 0;
-  animation: mainAnim 2s 0.1s forwards;
-}
-
-@keyframes mainAnim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 main > div {
@@ -227,23 +216,12 @@ header {
 header div:first-child {
   margin: 0 3vw;
   align-self: center;
-  opacity: 0;
-  animation: headerAnim 2s 0.1s forwards;
-}
-
-@keyframes headerAnim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .hero {
   min-height: 70vh;
   clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  animation: heroAnim 0.7s 0.1s forwards;
+  animation: heroAnim 0.7s 0.2s forwards;
 }
 
 @keyframes heroAnim {

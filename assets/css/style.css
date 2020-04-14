@@ -18,13 +18,21 @@ body {
 }
 
 ::-moz-selection {
-  background: var(--background);
+  background: transparent;
   color: var(--primary);
 }
 
 ::selection {
-  background: var(--background);
+  background: transparent;
   color: var(--primary);
+}
+
+h1::-moz-selection {
+  color: var(--black);
+}
+
+h1::selection {
+  color: var(--black);
 }
 
 *,

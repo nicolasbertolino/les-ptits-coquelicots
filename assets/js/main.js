@@ -1,14 +1,14 @@
 // Cursor
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", e => {
+document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
     "style",
-    "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;"
+    "top: " + (e.clientY - 17) + "px; left: " + (e.clientX - 17) + "px;"
   );
 });
 
-document.querySelectorAll("a").forEach(link => {
+document.querySelectorAll("a").forEach((link) => {
   link.addEventListener("mouseenter", () => cursor.classList.add("condense"));
   link.addEventListener("mouseleave", () =>
     cursor.classList.remove("condense")
@@ -35,7 +35,7 @@ const navShow = () => {
       {
         y: "50%",
         opacity: 0,
-        ease: Expo.easeOut
+        ease: Expo.easeOut,
       },
       0.1,
       "+=0.5"

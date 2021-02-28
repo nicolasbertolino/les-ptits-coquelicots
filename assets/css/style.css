@@ -202,6 +202,19 @@ h5 {
   transform: translate(7px, -6px);
 }
 
+.info {
+  max-width: 100ch;
+  margin: 120px auto 0;
+  padding: 1rem 2rem 2rem;
+  border: 3px solid var(--secondary);
+  background: #f7f7f7;
+}
+
+.info a {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
 /* Layout */
 main {
   display: grid;

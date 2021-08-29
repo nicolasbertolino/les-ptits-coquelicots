@@ -792,14 +792,29 @@ button {
 
 /* Contact Infos */
 
-.contact-infos div {
+.contact-infos > div {
   display: flex;
-  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .contact-infos i {
   font-size: 2rem;
   margin-right: 1.5rem;
+}
+
+.contact-infos span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+.contact-infos h3 {
+  margin: 0;
+}
+
+.numero {
+  display: flex;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {

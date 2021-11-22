@@ -2,578 +2,256 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="La Mam — Maison d'Assistantes Maternelles — Les P'tits Coquelicots est un mode de garde à Cazères pour vos enfants."
-    />
-    <title>
-      Les P'tits Coquelicots — Maison d'Assistantes Maternelles à Cazères
-    </title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/themify-icons.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/favicon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Londrina+Solid:300,400&display=swap"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/gfg0nhv.css" />
+    <meta name="description" content="La Mam — Maison d'Assistantes Maternelles — Les P'tits Coquelicots est un mode de garde à Cazères pour vos enfants." />
+    <title>Les P'tits Coquelicots — Maison d'Assistantes Maternelles à Cazères</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav>
-      <a href="/" class="logo"><img src="assets/images/logo.png"/></a>
-      <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/photos">Photos</a></li>
-        <li>
-          <a class="onpage" href="/projet-pedagogique">Projet pédagogique</a>
-        </li>
-        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-      <!-- Hamburger -->
-      <div class="hamburger" onclick="toggleBurger(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </nav>
-    <!-- Responsive Menu -->
-    <div class="menu">
-      <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/photos">Photos</a></li>
-        <li>
-          <a class="onpage" href="/projet-pedagogique">Projet pédagogique</a>
-        </li>
-        <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
-    <!-- Header -->
+
     <header>
       <div>
-        <h1 id="projet__h1">Projet éducatif et pédagogique</h1>
-        <h3 style="margin-top: 3rem; margin-bottom: 3rem;">
-          Dans un souci de cohérence, de complémentarité et de coopération, nous
-          avons réfléchi et longuement discuté des valeurs éducatives que nous
-          voulons transmettre et les moyens pédagogiques que nous allons mettre
-          en place au sein de la Mam.
-        </h3>
+        <a href="/" class="logo">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+        <nav>
+          <a href="/">
+            Accueil
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/photos">
+            Photos
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/projet-pedagogique" class="active">
+            Projet pédagogique
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/charte-de-fonctionnement">
+            Charte de fonctionnement
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/contact">
+            <button class="btn">Contact</button>
+          </a>
+        </nav>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="hero hero-projet"></div>
     </header>
-    <!-- Content -->
-    <main>
-      <!-- Projet éducatif & pédagogique -->
-      <div class="projets">
-        <h2>
-          I. Accompagnement à la séparation et adaptation
-        </h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              La première séparation d'un enfant avec ses parents est un moment
-              inévitable, qui peut être source d'angoisse tant pour l'enfant que
-              pour ses parents.
-            </p>
-            <p>
-              Celle-ci doit être accompagnée par des professionnelles
-              rassurantes, disponibles et à l'écoute des craintes et angoisses
-              qu'elle suscite.
-            </p>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              L'adaptation est valable pour le nouvel enfant accueilli, pour ses
-              parents, pour les petits déjà présents au sein de la structure et
-              pour les assistantes maternelles. Une adaptation réussie est une
-              garantie pour un accueil serein tant pour les enfants que pour les
-              parents qui peuvent alors partir travailler en toute quiétude. La
-              relation est de confiance.
-            </p>
-            <p>
-              Nous mettrons en place une période d'adaptation pendant laquelle
-              l'enfant, ses parents et l'assistante maternelle feront
-              connaissance. Cette adaptation se fait généralement sur une
-              semaine mais reste modulable selon les besoins des uns et des
-              autres. Voici un exemple type d'une semaine d'adaptation :
-            </p>
-            <ul class="ul">
-              <li>J1 parents et enfant restent 30 minutes en observation</li>
-              <li>
-                J2 nous proposons d'accueillir l'enfant seul durant 2 à 3 heures
-              </li>
-              <li>J3 nous intégrons à J2 le repas</li>
-              <li>J4 petite matinée avec le repas et la sieste</li>
-              <li>J5 journée d'accueil normale prévue au contrat</li>
-            </ul>
-            <p>
-              L'objet transitionnel, s'il y en a un (Doudou ou autre), permettra
-              de faire plus facilement le lien avec la maison. Il a une fonction
-              rassurante et de transition entre ses lieux de vie. Il sera donc
-              le bienvenu.
-            </p>
-          </div>
-        </div>
-        <h2>II. Partenariat et communication conviviale</h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              Chaque enfant est différent (personnalité, sensibilité, parcours
-              familial) et la Mam doit pouvoir s'adapter aux besoins propres de
-              chacun, afin de l'amener tout en douceur et à son rythme vers une
-              socialisation réussie.
-            </p>
-            <p>
-              L'attitude des uns et des autres (parents, enfants, assistantes
-              maternelles) donnera le ton de bonne humeur et de bienveillance
-              dans la Mam.
-            </p>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              Un cahier de liaison sera mis en place entre assistantes
-              maternelles et parents afin de faciliter la transmission des
-              informations concernant l'enfant. Les assistantes maternelles y
-              inscriront chaque jour un bref compte-rendu de la journée de
-              l'enfant.
-            </p>
-            <p>
-              Puisque nous mettons en place une délégation d'accueil, il est
-              primordial que les informations du matin et du soir y soit
-              inscrites, afin que chaque assistante maternelle reçoive les
-              indications utiles pour le bon déroulement de la journée. Ce
-              cahier restera dans la Mam.
-            </p>
-            <p>
-              Afin de répondre au mieux aux attentes et aux demandes des
-              parents, nous pourrons fixer des rendez-vous en dehors des heures
-              d'accueil pour discuter sur des points bien précis.
-            </p>
-          </div>
-        </div>
-        <h2>III. L'accueil au quotidien</h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              Chaque enfant est différent (personnalité, sensibilité, parcours
-              familial) et la Mam doit pouvoir s'adapter aux besoins propres de
-              chacun, afin de l'amener tout en douceur et à son rythme vers une
-              socialisation réussie.
-            </p>
-            <p>
-              L'attitude des uns et des autres (parents, enfants, assistantes
-              maternelles) donnera le ton de bonne humeur et de bienveillance
-              dans la Mam.
-            </p>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              Afin de s'adapter au mieux à l'âge et la personnalité de chaque
-              enfant, des groupes seront formés pour les repas, les siestes,
-              certaines activités et sorties. Toutefois il y aura une
-              interactivité entre chaque groupe. Les enfants d'âges différents
-              seront parfois mélangés afin de stimuler les plus petits tout en «
-              responsabilisant » les plus grands.
-            </p>
-            <p>
-              Veillons également à les appeler par leurs prénoms, et pas
-              uniquement par des surnoms, nous respectons ainsi leur véritable
-              identité.
-            </p>
-            <p>
-              Nous aurons une attitude bienveillante et accueillante en saluant
-              les parents et les enfants à leur arrivée et à leur départ. Si
-              nous devons parler de l'enfant, nous nous adresserons à ses
-              parents et à lui en même temps afin de lui faire comprendre qu'il
-              n'est pas un être insignifiant et qu'il fait donc partie
-              intégrante du trio « assistante maternelle / parents / enfant ».
-            </p>
-            <p>
-              Il est très important de comprendre que l'enfant est une personne
-              et non un objet (parler au-dessus de la tête de l'enfant sans
-              l'intégrer dans la conversation...)
-            </p>
-          </div>
-        </div>
-        <h2>IV. Les repas</h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              Le repas est un moment convivial, d'échange et de détente. C'est
-              aussi un repère dans la journée. Il permet :
-            </p>
-            <ul class="ul">
-              <li>De favoriser les échanges entre enfants et adultes.</li>
-              <li>D'introduire les règles de vie.</li>
-              <li>Les rituels avant et après le repas (lavage des mains).</li>
-              <li>La notion de patience (attendre son tour).</li>
-              <li>L'autonomie (manger seul).</li>
-              <li>La découverte du goût, des couleurs et des textures.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              Le mobilier du déjeuner sera adapté aux enfants afin qu'ils s'y
-              sentent bien. Table et chaises à leur taille, transats et/ou
-              chaises hautes pour les plus petits.
-            </p>
-            <p>
-              Nous sommes soucieuses de respecter la qualité des aliments, et
-              des saisons, ainsi que le régime alimentaire de chacun selon son
-              choix, ses goûts et sa religion. Toutefois si les exigences
-              culinaires des parents sont trop contraignantes, nous leur
-              demanderons de ramener le repas dans un sac isotherme au nom de
-              l'enfant, afin de respecter la chaîne du froid.
-            </p>
-            <p>Le temps du repas débutera par le lavage des mains.</p>
-            <p>
-              Les repas seront simples et variés (plats, dessert), le menu de la
-              semaine sera affiché à l'entrée de la Mam. Les plus grands
-              pourront participer à l'élaboration du repas (atelier pain, salade
-              de fruits, gâteaux...), et de la mise du couvert. Chaque enfant
-              apprendra la notion de patience : le repas ne débute que lorsque
-              tout le monde est servi. Chaque enfant apprendra progressivement à
-              manger seul dans un premier temps avec ses doigts, puis avec des
-              couverts adaptés sous le regard bienveillant de l'assistante
-              maternelle.
-            </p>
-            <p>
-              La fin du repas se terminera par un nettoyage du visage et des
-              mains avec un gant ou une serviette. L'enfant sera prévenu de ce
-              petit débarbouillage afin qu'il ne le prenne pas comme une
-              agression ; ne pas arriver par derrière et l'essuyer sans que
-              l'enfant ne comprenne ce qui se passe. Les plus grands pourront le
-              faire eux-mêmes.
-            </p>
-            <p>
-              Nous ne forcerons pas les enfants à terminer les assiettes, leur
-              appétit fluctuant grandement au cours de leur croissance et de
-              leur état de santé. Nous les inviterons à goûter tout nouvel
-              aliment en très petites quantités dans un souci de découverte.
-            </p>
-            <p>
-              Pour les bébés allaités, le lait maternel devra être fourni en
-              quantité suffisante (poches congelées nominatives et datées), pour
-              répondre à la demande du tout petit.
-            </p>
-            <p>
-              Pour les bébés nourris au lait maternisé, les parents fourniront
-              le lait en poudre ainsi que l'eau.
-            </p>
-            <p>
-              Dans les deux cas, les biberons seront fournis par les parents.
-            </p>
-            <p>
-              Le moment de la diversification alimentaire se fera à la demande
-              des parents.
-            </p>
-          </div>
-        </div>
-        <h2>V. Le sommeil</h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              La journée de l'enfant est rythmée par des moments de siestes ou
-              de repos, c'est un moment primordial pour son développement.
-            </p>
-            <p>
-              La sieste est nécessaire, ne pensons pas qu'en la supprimant,
-              l'enfant dormira mieux la nuit. Toutefois, lorsque l'enfant
-              atteint l'âge de 2 ans et demi, 3 ans, il est préférable que la
-              sieste ne se prolonge pas au-delà de 16h30 afin de ne pas
-              perturber l'endormissement du soir.
-            </p>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              L'enfant sera couché dans une tenue confortable (sur-pyjama ou
-              turbulette) dans une chambre à bonne température et dans un lit
-              adapté.
-            </p>
-            <p>
-              Le moment de la sieste sera agréable et rassurant, en fournissant
-              doudous et sucettes, lit personnalisé et la présence bienveillante
-              de l'assistante maternelle à proximité de la chambre. Les chambres
-              seront réparties par tranches d'âges ce qui permettra pour les
-              plus grands et gros dormeurs de se réveiller en douceur aux bruits
-              de la Mam.
-            </p>
-            <p>
-              Le moment de la sieste devant rester un moment agréable et
-              apaisant certains bébés pourront rester à côté de nous pour
-              apprivoiser le sommeil. Nous les amènerons progressivement à
-              intégrer leur lit situé dans la chambre.
-            </p>
-            <p>
-              Il faudra trouver un compromis entre les rituels d'endormissement
-              de la famille et ceux de la Mam.
-            </p>
-          </div>
-        </div>
-        <h2>
-          VI. Change de la couche et maîtrise des sphincters
-        </h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              Le moment du change de la couche est un moment de relation
-              privilégié et intime.
-            </p>
-            <p>
-              L'acquisition de la maitrise des sphincters est une étape
-              importante du développement et de l'autonomie de l'enfant. Elle
-              dépend de sa maturation physiologique et psychologique (24/36
-              mois.)
-            </p>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              Pour changer la couche, il est important de signifier au tout
-              petit ce que nous allons faire : le prévenir que nous allons lui
-              changer la couche, en lui indiquant qu'il pourra revenir sur son
-              activité de suite après. Ne pas faire de commentaires sur le
-              contenu de la couche (aspect, odeur...)
-            </p>
-            <p>
-              Nous proposons dans un premier temps aux parents d'initier
-              l'apprentissage du pot, et relayons cette éducation en respectant
-              l'intimité et la pudeur de l'enfant. Le pot ou les toilettes avec
-              réducteurs de WC seront proposés.
-            </p>
-            <p>
-              Au début de l'acquisition de cet apprentissage nous féliciterons
-              l'enfant sans toutefois l'encenser et ne l'obligerons pas à rester
-              sur le pot jusqu'à l'émission d'une selle ou de l'urine. Nous lui
-              proposerons le pot régulièrement afin de faciliter son autonomie.
-            </p>
-          </div>
-        </div>
-        <h2>VII. Le jeu, l'éveil, et les sorties</h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              Le jeu est sa principale occupation, c'est un facteur de
-              développement. L'enfant éprouve du plaisir à jouer, c'est un signe
-              de bien-être et une source d'échange avec l'adulte et les autres
-              enfants. Il est important de favoriser son autonomie et sa
-              confiance en lui.
-            </p>
-            <p>
-              On ne peut grandir sans un minimum de confiance en soi permettant
-              de se fixer des buts et de devenir un petit être autonome. Si le
-              jeune enfant a besoin d'un cocon protecteur dans lequel il se sent
-              bien, il a aussi soif de découvertes. Le monde extérieur ne manque
-              pas d'occasions d'éveiller sa curiosité.
-            </p>
-            <p>
-              L'enfant a besoin de rêves et de détente, aussi intime que soit
-              une Mam, une journée entière passée aux contacts d'autres enfants
-              reste une source d'énervement. Il est donc important d'instaurer
-              au cours de la journée des moments de calme et de détente.
-            </p>
-            <p>
-              Les sorties et promenades sont des moments de plaisir et de
-              découvertes.
-            </p>
-            <p>
-              La lecture et l'accès libre aux livres permet à l'enfant de se
-              poser, de rêver et d'éveiller sa curiosité.
-            </p>
-            <img src="assets/images/projet-img.jpg" alt="" />
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              Les activités seront proposées plutôt qu'imposées. Nous comptons
-              en effet sur la curiosité naturelle de l'enfant pour l'amener à
-              participer plutôt que sur la contrainte. Des espaces diversifiés
-              et adaptés seront mis en place pour permettre de favoriser ainsi
-              son autonomie.
-            </p>
-            <p>
-              Pour les plus petits : nous organiserons un espace sécurisé par
-              des petites barrières avec tapis de sol pour favoriser leur
-              motricité : rotation du haut du corps avec des objets placés à
-              leur droite et leur gauche pour progressivement basculer du dos
-              sur le ventre : balles, cubes en mousse, boites à empiler, à
-              encastrer...
-            </p>
-            <p>
-              Nous proposerons également des jouets qui stimuleront leur sens :
-              mobile musical, hochet, anneau de dentition ; et leur éveil :
-              jouets affectifs, poupées, peluches...
-            </p>
-            <p>
-              Pour les plus grands : toboggan, jeux au jardin selon le temps,
-              porteurs, poussettes, cabane en plastique, bascules, table
-              d'activités pour jeux de transvasement, ballons, trottinettes,
-              jeux à tirer et à pousser, jeux de craies...
-            </p>
-            <p>
-              Petits parcours sensoriel : mains/pieds, chaud/froid, doux/rêche,
-              sec/humide. Petits marches pieds, chaises adaptées à leurs taille
-              pour monter, descendre, passer dessous. Pain de glace pour le
-              froid, poche de gel chauffant pour le chaud, tampon à récurer pour
-              le rêche, coton pour le doux... Liste non exhaustive et ateliers
-              adaptables au fil des saisons.
-            </p>
-            <p>
-              Les ateliers portant sur la peinture, les gommettes, la pâte à
-              modeler, la cuisine (pâte à pain, pâtisseries, préparation du
-              dessert, goûter...) sont proposés en activités dirigées le matin.
-            </p>
-            <p>
-              Diverses jeux agrémentent la salle d'activités : jeux de
-              constructions et d'emboitements (planchettes en bois à empiler -
-              les Kapla, cubes plastiques à encastrer), d'imitations (cuisine
-              dinette, atelier bricolage, garages voitures.)
-            </p>
-            <p>
-              Le principe même du jeu et de l'activité est d'être présent avec
-              l'enfant et de lui faire passer un bon moment. On ne peut bien-sûr
-              pas toujours satisfaire toutes leurs attentes, mais nous essayons
-              de trouver un équilibre et de ne pas imposer à tous les enfants
-              les mêmes choix.
-            </p>
-            <p>
-              Afin de développer la confiance en soi, des activités valorisantes
-              (création d'objet, préparation du goûter, mettre la table, ranger
-              les jouets...) sont organisées.
-            </p>
-            <p>
-              Des plages de temps sont laissées libres afin d'apprendre aux
-              enfants à s'occuper par eux-mêmes, à imaginer eux-mêmes des jeux
-              et pour leur laisser aussi la possibilité de choisir parfois de ne
-              rien faire, de rêvasser, de s'ennuyer un peu.
-            </p>
-            <p>
-              Un coin lecture est aménagé dans la Mam avec une bibliothèque dont
-              certains livres en accès libre. Nous animons des ateliers chansons
-              et lecture entre nous, et des bénévoles de l'association « Lire et
-              Faire Lire » viennent animer un temps lecture.
-            </p>
-            <p>
-              Les sorties pourront se faire dans le jardin de la Mam, au jardin
-              public, le RAM, en poussettes ou avec leurs petits petons selon
-              leurs âges et leurs désirs.
-            </p>
-            <p>Nous allons une fois par mois à la médiathèque.</p>
-          </div>
-        </div>
-        <h2>VIII. Aménagement du lieu de vie de la Mam</h2>
-        <div class="projet">
-          <div>
-            <h3>Projet éducatif</h3>
-            <p>
-              Les jeunes enfants sont très sensibles à leur environnement qui
-              peut, selon l'influence de l'adulte, permettre des jeux riches et
-              interactions agréables, ou bien au contraire déclencher des
-              déplacements, des pleurs, des moments d'excitations, des conflits
-              entre les enfants ou avec les adultes.
-            </p>
-          </div>
-          <div>
-            <h3>Projet pédagogique</h3>
-            <p>
-              On peut agir de façon très efficace sur ces comportements, en
-              créant des zones de jeux aménagées : coin dinette, poupées,
-              garage, coin détente.
-            </p>
-            <p>
-              Nous avons aménagé la salle dans un souci de voir les enfants en
-              permanence, et en pensant qu'il est très important aussi que nous
-              restions toujours dans leur champ visuel. Pour cela aucun meuble
-              trop haut ne vient séparer les espaces de jeux.
-            </p>
-            <p>
-              Nous reprenons à ce propos l'image d'Anne-Marie Fontaine,
-              psychologue et chercheuse au CNRS, qui compare l'assistante
-              maternelle à un phare qui éclaire et sécurise : les enfants
-              préfèrent donc jouer à proximité du phare !
-            </p>
-            <p>
-              L'espace évoluera en fonction de l'âge des enfants. L'observation
-              de leurs comportements et de leurs déplacements amènera à modifier
-              le lieu de vie pour un bien-être maximal.
-            </p>
-          </div>
-        </div>
-        <h2>En conclusion</h2>
+    <div class="overlay"></div>
+
+    <main class="page">
+
+      <section class="intro">
         <div>
-          <p>
-            L'élaboration de ce projet ne s'est pas faite de façon aisée et
-            évidente. Il nous a fallu plusieurs temps de réflexions et de
-            discussions afin de mettre en harmonie nos pratiques et que chacune
-            reste congruente, toujours dans une perspective de bienveillance et
-            de dialogue.
-          </p>
-          <p>
-            Notre expérience d'assistante maternelle et les différentes
-            formations suivies nous ont permis de nous poser les bonnes
-            questions et de nous positionner en tant que véritables
-            professionnelles de la petite enfance. Aussi et à la lumière de
-            certains articles lus dans des magazines spécialisés - dans la
-            petite enfance et pour les assistantes maternelles, nous avons pu
-            asseoir notre connaissance sur le développement du jeune enfant et
-            gardons ainsi à l'esprit qu'il est primordial de répondre aux
-            besoins de motricité, de manipulation, d'exploration, de langage, de
-            créativité des enfants qui nous sont confiés.
-          </p>
+          <h1>Notre projet éducatif et pédagogique</h1>
+          <p>Dans un souci de cohérence, de complémentarité et de coopération, nous avons réfléchi et longuement discuté des valeurs éducatives que nous voulons transmettre et les moyens pédagogiques que nous allons mettre en place au sein de la MAM.</p>
+          <a href="files/projet-pedagogique.pdf" target="_blank">
+            <button class="btn">Voir la version PDF</button>
+          </a>
         </div>
-      </div>
+      </section>
+
+      <section class="project">
+        <span id="scrollTarget"></span>
+        <div>
+          <ul>
+            <li class="tabs__link active" onclick="openTab(event, 'One')">
+              <span>Accompagnement à la séparation et adaptation</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Two')">
+              <span>Partenariat et communication conviviale</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Three')">
+              <span>L'accueil au quotidien</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Four')">
+              <span>Les repas</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Five')">
+              <span>Le sommeil</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Six')">
+              <span>Change de la couche et maîtrise des sphincters</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Seven')">
+              <span>Le jeu, l'éveil, et les sorties</span>
+            </li>
+            <li class="tabs__link" onclick="openTab(event, 'Eight')">
+              <span>Aménagement du lieu de vie de la MAM</span>
+            </li>
+          </ul>
+          <article id="One" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>La première séparation d'un enfant d'avec ses parents est un moment inévitable, qui peut être source d'angoisse tant pour l'enfant que pour ses parents. Celle-ci doit être accompagnée par des professionnelles rassurantes, disponibles et à l'écoute des craintes et angoisses qu'elle suscite.</p>
+            <p>Lors de l'intégration de Roselyne DENIS et du nouveau lieu d'accueil de la MAM, il sera primordial de faire une période d'adaptation suffisamment longue pendant laquelle chacun apprendra à se connaître et se reconnaître.</p>
+            <div class="title">Pédagogie</div>
+            <p>L'adaptation est valable pour le nouvel enfant accueilli, pour ses parents, pour les petits déjà présents au sein de la structure et pour les assistantes maternelles. Une adaptation réussie est une garantie pour un accueil serein tant pour les enfants que pour les parents qui peuvent alors partir travailler en toute quiétude. La relation est de confiance.</p>
+            <p>Nous mettrons en place une période d'adaptation pendant laquelle l'enfant, ses parents et les assistantes maternelles feront connaissance. Cette adaptation se fait généralement sur une semaine mais reste modulable selon les besoins des uns et des autres.</p>
+            <p>L'adaptation  différera selon la sensibilité de l'enfant accueilli. Celle-ci sera prise en compte et jouera sur le temps d'adaptation. C'est l'assistante maternelle référente qui accompagne cette adaptation tant auprès de l'enfant ou bébé que de ses parents. Cette relation privilégiée permet une adaptation individualisée et offre à l'enfant une sécurité affective nécessaire à son bon développement.</p>
+            <p>L'objet transitionnel, s'il y en a un (Doudou ou autre), permettra de faire plus facilement le lien avec la maison. Il a une fonction rassurante et de transition entre ses lieux de vie. Il sera donc le bienvenu. Ce dernier devra être sécurisé afin de prévenir la mort inexpliquée du nourrisson (MIN).</p>
+          </article>
+          <article id="Two" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>Dans un souci de cohérence, il est indispensable d'échanger autour des valeurs éducatives ainsi que des possibilités pour les assistantes maternelles de les mettre en place. Il nous semble important d'instaurer avec les parents un véritable partenariat centré sur le bien- être et l'épanouissement de l'enfant.</p>
+            <div class="title">Pédagogie</div>
+            <p>La transmission de la journée se fera quotidiennement, à l'oral et de manière brève au départ de chaque enfant.</p>
+            <p>Afin de répondre au mieux aux attentes et aux demandes des parents, nous pourrons fixer des rendez-vous en dehors des heures accueil, pour discuter sur des points bien précis.</p>
+          </article>
+          <article id="Three" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>Chaque enfant est différent (personnalité, sensibilité, parcours) et la MAM doit pouvoir s'adapter aux besoins propres de chacun, afin de l'amener tout en douceur et à son rythme vers une socialisation réussie. L'attitude des uns et des autres (parents enfants assistantes maternelles) donnera le ton de bonne humeur et de bienveillance dans la MAM.</p>
+            <div class="title">Pédagogie</div>
+            <p>Afin de s'adapter au mieux à l'âge et la personnalité de chaque enfant, des groupes seront formés pour les repas, les siestes, certaines activités et sorties. Toutefois il y aura une interactivité entre chaque groupe. Les enfants d'âges différents seront parfois mélangés afin de stimuler les plus petits tout en « responsabilisant » les plus grands.</p>
+            <p>La délégation d'accueil sera mise en place tout au long de la journée. Elle s'effectue de manière à composer des groupes comme par exemple :
+            <p>Une assistante maternelle est détachée sur un groupe pendant que ses collègues sont elles dédiées à autre activité :</p>
+            <ul class="list">
+              <li>activité manuelle (peinture, gommettes),</li>
+              <li>activité de cuisine (pâte à pain, pêle pommes)</li>
+              <li>ou encore de balades, de change de couche, de repas, mise à la sieste.</li>
+            </ul>
+            <p>Cette délégation d'accueil peut être aussi mise en place lors d'une absence d'une assistante maternelle et toujours dans la limite de l'agrément ( une assistante maternelle / 4 enfants).</p>
+            <p>Nous aurons une attitude bienveillante et accueillante en saluant les parents et les enfants à leur arrivée et à leur départ. Si nous devons parler de l'enfant, nous nous adresserons à ses parents et à lui en même temps afin de lui faire comprendre qu'il n'est pas un être insignifiant et qu'il fait donc partie intégrante du trio «  assistante maternelle / parents/enfant ». Veillons également à les appeler par leurs prénoms, et pas uniquement par des surnoms, nous respectons ainsi leur véritable identité.</p>
+            <p>Il est très important de comprendre que l'enfant est une personne et non un objet (parler au-dessus de la tête de l'enfant sans l'intégrer dans la conversation...).</p>
+          </article>
+          <article id="Four" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>Le repas est un moment convivial et d'échanges et de détente. C'est aussi un repère dans la journée. Il permet </p>
+            <ul class="list">
+              <li>De favoriser les échanges entre enfants et adultes</li>
+              <li>D'introduire les règles de vie</li>
+              <li>Les rituels avant et après le repas (lavage des mains)</li>
+              <li>La notion de patience (attendre son tour)</li>
+              <li>L'autonomie (manger seul)</li>
+              <li>La découverte du goût, des couleurs et des textures</li>
+            </ul>
+            <p>Pour les bébés, ce moment reste un temps privilégié avec son assistante maternelle référente.</p>
+            <div class="title">Pédagogie</div>
+            <p>Le mobilier du déjeuner est adapté aux enfants afin qu'ils s'y sentent bien. Tables et chaises à leur taille, transats pour les plus petits. Nous sommes soucieuses de respecter la qualité des aliments, et des saisons, ainsi que le régime alimentaire de chacun selon son choix, son âge, ses goûts et sa religion.</p>
+            <p>Toutefois, si les exigences culinaires des parents excèdent les contraintes, nous leur demanderons de ramener le repas dans un sac isotherme au nom de l'enfant, afin de respecter la chaîne du froid. Le temps du repas débutera par le lavage des mains.</p>
+            <p>Les repas sont simples et variés (plats, dessert), le menu de la semaine est affiché à l'entrée de la MAM. Les plus grands pourront participer à l'élaboration du repas (atelier pain, salade de fruits, gâteaux...). Lorsque tout le monde est servi, nous invitons les enfants à débuter le repas. Chacun apprendra progressivement à manger seul dans un premier temps avec ses doigts, puis avec des couverts adaptés sous le regard bienveillant de l'assistante maternelle.</p>
+            <p>Les repas sont servis dans leur intégralité sur un plateau individuel pour les plus âgés, et à la table qui leur est réservée. Sur le plateau, il y a l'assiette du repas, le couvert adapté, le dessert, la timbale d'eau ainsi que le petit gant propre pour se débarbouiller. Afin de ne pas souiller leur vêtement, nous avons confectionné de longs bavoirs qui se glissent sous les plateaux.</p>
+            <p>La fin du repas se terminera par un nettoyage du visage et des mains avec leur gant.</p>
+            <p>L'intérêt du plateau repas permet un apprentissage de l'autonomie et du sens du repas (plat et dessert).</p>
+            <p>Pour les plus jeunes, la table est équipée de sièges adaptés. Les repas sont servis dans de petits bols individuels et donné à la cuillère. En fonction de l'autonomie de chacun nous leur proposons des petits morceaux pouvant être attrapés avec leur main. La fin de leur repas se terminera par un nettoyage du visage et des mains. L'enfant sera prévenu de ce petit débarbouillage afin qu'il ne le prenne pas comme une agression ; ne pas arriver par derrière et l'essuyer sans que l'enfant ne comprenne ce qui se passe. Les gants sont nettoyés après chaque repas.</p>
+            <p>Nous ne forcerons pas les enfants à terminer les assiettes, leur appétit  fluctuant grandement au cours de leur croissance et de leur état de santé. Nous les inviterons à goûter tout nouvel  aliment en très petites quantités dans un souci de découverte.</p>
+            <p>Pour les bébés allaités, le lait maternel devra être fourni en quantité suffisante (poches congelées nominatives et datées), pour répondre à la demande du tout petit.
+            </p>
+            <p>Pour les bébés nourris au lait maternisé, les parents fourniront, le lait en poudre ainsi que l'eau. Dans les 2 cas, les biberons seront fournis par les parents. Le moment de la diversification alimentaire se fera à la demande des parents et sera initié par eux.</p>
+            <p>Précisons également que les repas sont pris au jardin dès que la météo le permet.</p>
+          </article>
+          <article id="Five" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>La journée de l'enfant est rythmée par des moments de siestes ou de repos, c'est un moment primordial pour son développement. La sieste est nécessaire, ne pensons pas qu'en la supprimant, l'enfant dormira mieux la nuit. Toutefois, lorsque l'enfant atteint l'âge de 2 ans et demi, 3 ans, il est préférable que la sieste ne se prolonge pas au-delà de 16h30 afin de ne pas perturber l'endormissement du soir.</p>
+            <div class="title">Pédagogie</div>
+            <p>L'enfant sera couché dans une tenue confortable (sur-pyjama ) dans une chambre à bonne température (18 degrés) et dans un lit adapté.</p>
+            <p>Le moment de la sieste sera agréable et rassurant, en fournissant doudous et sucettes, lit personnalisé et la présence bienveillante de l'assistante maternelle à proximité de la chambre.</p>
+            <p>Les enfants sont répartis par affinité de sommeil.</p>
+            <p>Le moment de la sieste devant rester un moment agréable et apaisant certains bébés pourront rester à côté de nous pour apprivoiser le sommeil. Nous les amènerons progressivement à intégrer leur lit situé dans la chambre.</p>
+            <p>Il faudra trouver un compromis entre les rituels d'endormissement de la famille et ceux de la MAM.</p>
+          </article>
+          <article id="Six" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>Le moment du change de la couche est un moment de relation privilégié et intime. L'acquisition de la maîtrise des sphincters est une étape importante du développement et de l'autonomie de l'enfant. Elle dépend de sa maturation physiologique et psychologique (18/24 mois).
+              </p>
+            <div class="title">Pédagogie</div>
+            <p>Pour changer la couche, il est important de signifier au tout petit ce que nous allons faire : le prévenir que nous allons lui changer la couche, en lui indiquant qu'il pourra revenir à son activité de suite après. Ne pas faire de commentaires sur le contenu de la couche (aspect, odeur...)</p>
+            <p>Nous proposons dans un premier temps aux parents d'initier l'apprentissage du pot, et relayons cette éducation en respectant l'intimité et la pudeur de l'enfant. Le pot ou les toilettes avec réducteurs de WC seront proposés.</p>
+          </article>
+          <article id="Seven" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>Le jeu est sa principale occupation, c'est un facteur de développement. L'enfant éprouve du plaisir à jouer, c'est un signe de bien-être et une source d'échange avec l'adulte et les autres enfants. Il est important de favoriser son autonomie et sa confiance en lui.</p>
+            <p>On ne peut grandir, sans un minimum de confiance en soi permettant de se fixer des buts et de devenir un petit être autonome. Si le jeune enfant a besoin d'un cocon protecteur dans lequel il se sent bien, il a aussi soif de découvertes. Le monde extérieur ne manque pas d'occasions d'éveiller sa curiosité.</p>
+            <p>L'enfant a besoin de rêves et de détente, aussi intime que soit une MAM, une journée entière passée aux contacts d'autres enfants restent une source d'énervement. Il est donc important d'instaurer au cours de la journée des moments de calme et de détente.</p>
+            <p>Les sorties et promenades sont des moments de plaisir et de découvertes.</p>
+            <p>La lecture et l'accès libre aux livres permet à l'enfant de se poser, de rêver et d'éveiller sa curiosité.</p>
+            <div class="title">Pédagogie</div>
+            <p>Les activités seront proposées plutôt qu'imposées. Nous comptons en effet sur la curiosité naturelle de l'enfant  pour l'amener à participer plutôt que sur la contrainte. Des espaces diversifiés et adaptés seront mis en place pour permettre de favoriser ainsi son autonomie.</p>
+            <p><u>Pour les plus jeunes :</u></p>
+            <p>Nous organiserons un espace sécurisé par des petites barrières avec tapis de sol pour favoriser leur motricité : rotation du haut du corps avec des objets placés à leur droite et leur gauche pour progressivement basculer du dos sur le ventre : balles, cubes en mousse, boites à empiler, à encastrer...</p>
+            <p>Nous proposerons également des jouets qui stimuleront leur sens : mobile musical, hochet, anneau de dentition, et leur éveil : jouets affectifs, poupées, peluches...</p>
+            <p>Nous précisons également que nous favorisons la motricité libre en nous inspirant  notamment des réflexions d'Emmi-pikler.</p>
+            <p><u>Pour les plus âgés :</u></p>
+            <p>Toboggan, jeux au jardin selon le temps, porteurs, poussettes,  cabane en plastique, bascules, table d'activités pour jeux de transvasement, ballons, trottinettes, jeux à tirer et à pousser, jeux de craies...</p>
+            <p>Petits parcours sensoriel : mains/pieds, chaud/froid, doux/rêche, sec/humide. Petits marches pieds, chaises adaptées à leurs taille pour  monter, descendre, passer dessous. Pain de glace pour le froid, poche de gel chauffant pour le chaud, tampon à récurer pour le rêche, coton pour le doux... liste non exhaustive et ateliers adaptables au fil des saisons.</p>
+            <p>Nous utilisons dans la mesure du possible du matériel déjà existant dans la MAM, afin de ne pas être dans une démarche d'achat excessif. Nous achetons  du matériel en bon état, répondant aux normes de sécurité en vigueur (le marquage CE, l'identification du fabricant, la mention « ne convient pas à un enfant de 36 mois » le cas échéant le marquage « NF petite enfance » atteste que le produit a subi des tests de sécurité et d'adaptation à l'usage) et en quantité suffisante dans les bourses aux jouets et sur les sites de revente internet.</p>
+            <p>Les ateliers portant sur la peinture, les gommettes, la pâte à modeler, la cuisine (pâte à pain, pâtisseries, préparation du dessert, goûter...) sont proposés en activités dirigées le matin.</p>
+            <p>Divers jeux viennent agrémenter la salle d'activités : jeux de constructions et emboîtements (planchettes bois à empiler, cubes plastiques à encastrer), d'imitations (cuisine dînette, atelier bricolage, garages voitures). </p>
+            <p>Le principe même du jeu et de l'activité c'est d'être présent avec l'enfant et de lui faire passer un bon moment. Bien sûr, on ne peut pas toujours satisfaire toutes leurs attentes, mais nous essaierons de trouver un équilibre et de ne pas imposer à tous les enfants les mêmes choix. Les enfants mettent en place spontanément la notion d'affordance en détournant les objets et petits mobiliers mis à disposition. Par exemple une chaise peut devenir une voiture et la table une cabane etc.</p>
+            <p>Afin de développer la confiance en soi, des activités valorisantes (création d'objet, préparation du goûter, ranger les jouets...) sont organisées.</p>
+            <p>Des plages de temps sont laissés libres afin d'apprendre aux enfants à s'occuper par eux-mêmes, à imaginer eux-mêmes des jeux et pour leur laisser aussi la possibilité de choisir parfois de ne rien faire, de rêvasser, de s'ennuyer un peu.</p>
+            <p>Un coin lecture est aménagé dans la MAM avec une bibliothèque dont certains livres en accès libre. Nous animons des ateliers chansons, lecture entre nous, et une bénévole de l'association « Lire et Faire Lire » vient 1 fois par semaine animer un atelier lecture. Moment très attendu d'ailleurs par les enfants.Un temps lecture est aussi proposé pour un retour au calme avant la sieste de l'après midi.</p>
+            <p>Aussi souvent que possible, les enfants sont invités à jouer dans le jardin, à partir en promenade. Celle ci se fait en poussette ou à pieds selon l'âge et le désir de l'enfant et si la sécurité est assurée. Nous allons également à la médiathèque et au potager pour la culture et récolte des fruits et légumes.</p>
+          </article>
+          <article id="Eight" class="tab">
+            <div class="title">Valeurs éducatives</div>
+            <p>Les jeunes enfants sont très sensibles à leur environnement qui peut, selon la place de l'adulte permettre des jeux riches et interactions agréables, ou bien au contraire déclencher des déplacements, des pleurs, des moments d'excitations, des conflits entre les enfants ou avec les adultes.</p>
+            <div class="title">Pédagogie</div>
+            <p>On peut agir de façon très efficace sur ces comportements, en créant des zones de jeux aménagés : coin dînette, poupées, garage, coin détente avec mise à disposition du doudou...</p>
+            <p>Nous aménagerons la salle dans un souci de voir les enfants en permanence, et en pensant qu'il est très important aussi que nous restions toujours dans leur champ visuel. Pour cela aucun meuble trop haut ne viendra séparer les espaces de jeux.</p>
+            <p>Nous reprendrons à ce propos l'image d'Anne-Marie FONTAINE (psychologue et chercheuse au CNRS) qui compare l'assistante maternelle à un phare qui éclaire et sécurise : les enfants préfèrent donc jouer à proximité du phare !</p>
+            <p>L'espace de vie de la MAM n'est pas figé. Il évolue en fonction du groupe des enfants et de leur besoin.</p>
+            <p>Il est nécessaire d'organiser la vie de la MAM afin que chacun vive la journée  de manière agréable en fonction de l'âge, de l'humeur, et des souhaits des enfants.</p>
+            <p>Par exemple, ponctuellement dans la journée, pour le groupe des grands nous pouvons proposer dans une chambre avec des jouets réservés à leur âge, des jeux libres, ou de jouer au jardin si la météo le permet, ou encore participer à une activité dirigée bien sûr toujours accompagné d'une assistante maternelle.</p>
+          </article>
+        </div>
+      </section>
+
     </main>
-    <!-- Footer -->
+
     <footer>
+      <img src="img/logo-icon.svg" alt="Logo">
       <div>
         <ul>
-          <li><a href="/photos">Photos</a></li>
-          <li><a href="/reglement-interieur">Règlement intérieur</a></li>
+          <li><a href="/photos">Galerie d'images</a></li>
           <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.ladepeche.fr/article/2017/02/09/2513722-deux-passionnees-de-l-enfance-ouvrent-un-lieu-d-accueil.html"
-              >Ils parlent de nous</a
-            >
-          </li>
+          <li><a href="/charte-de-fonctionnement">Charte de fonctionnement</a></li>
+          <li><a href="/politique-de-confidentialite">politique de confidentialité</a></li>
+          <li><a href="https://www.ladepeche.fr/article/2017/02/09/2513722-deux-passionnees-de-l-enfance-ouvrent-un-lieu-d-accueil.html" target="_blank">On parle de nous</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+        <div>
+          <p>©2018-2021 Les P'tits Coquelicots. Fait avec <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.756 2.81C14.253 1.383 13.067.199 11.57.035 10.72-.045 9.867.011 9.088.4c-.612.306-1.102.818-1.542 1.347C7.003 1.104 6.405.528 5.613.23 5.137.049 4.62-.003 4.115 0c-.437.004-.878.047-1.295.188C2.055.446 1.415.982.937 1.643c-.14.195-.263.401-.367.617-.106.215-.196.439-.273.666-.676 2.237-.268 4.987 1.94 6.246.222.152.453.297.688.438.702.427 1.436.828 2.077 1.323.182.17.343.35.474.545.262.39.396.84.331 1.378.065.535-.417.918-.417 1.492.096.764 3.33-.974 3.604-1.153 2.28-1.334 4.595-3.056 5.5-5.694.148-.339.272-.688.37-1.045.323-1.183.299-2.49-.109-3.646" fill="#FF7B7B"/><path d="M14.006 3.025a2.13 2.13 0 0 0-.123-.618 1.916 1.916 0 0 0-.271-.506C12.935.993 11.528.712 10.373.993c-.448.126-.898.313-1.09.75-.064.189.192.313.32.25.835-.125 1.765-.076 2.518.251.19.083.367.182.53.3.546.388.801 1.014.93 1.64.256-.063.385-.375.406-.65.027-.168.033-.339.019-.508" fill="#FFF6F4"/></svg> par <a href="https://www.nicolasbertolino.com/" target="_blank" rel="noopener">Nicolas Bertolino</a></p>
+          <div onclick="window.scroll({top:0, behavior:'smooth'});">
+            <img src="img/arrow-up.svg" alt="Retour en haut">
+          </div>
+        </div>
       </div>
-      <!-- Copyright -->
-      <p class="copyright">
-        ©2020 Les P'tits Coquelicots. Fait avec <i class="ti-heart"></i> par
-        <a href="https://www.nicolasbertolino.com">Nicolas Bertolino</a>
-      </p>
-      <!-- Back To Top -->
-      <a class="back-top" href="#">
-        <img src="assets/images/circle.svg" alt="circle-top" class="circle" />
-        <img src="assets/images/arrow.svg" alt="arrow-top" class="arrow" />
-      </a>
     </footer>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+      function openTab(evt, tabName) {
+      let i, x, tablinks;
+      x = document.getElementsByClassName("tab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        function scrollTop() {
+          let element = document.getElementById("scrollTarget");
+          let yOffset = -150;
+          let y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+        if (window.innerWidth > 1024) {
+          scrollTop();
+        }
+      }
+      tablinks = document.getElementsByClassName("tabs__link");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
   </body>
 </html>

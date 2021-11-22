@@ -2,165 +2,131 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="La Mam — Maison d'Assistantes Maternelles — Les P'tits Coquelicots est un mode de garde à Cazères pour vos enfants."
-    />
-    <title>
-      Les P'tits Coquelicots — Maison d'Assistantes Maternelles à Cazères
-    </title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/themify-icons.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/favicon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Londrina+Solid:300,400&display=swap"
-    />
-    <link rel="stylesheet" href="https://use.typekit.net/gfg0nhv.css" />
+    <meta name="description" content="La Mam — Maison d'Assistantes Maternelles — Les P'tits Coquelicots est un mode de garde à Cazères pour vos enfants." />
+    <title>Les P'tits Coquelicots — Maison d'Assistantes Maternelles à Cazères</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
-
   <body>
-      <!-- Navbar -->
-      <nav>
-        <a href="/" class="logo"><img src="assets/images/logo.png"/></a>
-        <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/photos">Photos</a></li>
-          <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-          <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-          <li><a class="onpage" href="/contact">Contact</a></li>
-        </ul>
-        <!-- Hamburger -->
-        <div class="hamburger" onclick="toggleBurger(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </nav>
-      <!-- Responsive Menu -->
-      <div class="menu">
-        <ul>
-          <li><a href="/">Accueil</a></li>
-          <li><a href="/photos">Photos</a></li>
-          <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-          <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-          <li><a class="onpage" href="/contact">Contact</a></li>
-        </ul>
+
+    <header>
+      <div>
+        <a href="/" class="logo">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+        <nav>
+          <a href="/">
+            Accueil
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/photos">
+            Photos
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/projet-pedagogique">
+            Projet pédagogique
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/charte-de-fonctionnement">
+            Charte de fonctionnement
+            <svg width="46" height="4" viewBox="0 0 46 4" fill="none"><path d="M45 3C42.4931 3 42.4931 1 40.0727 1C37.6523 1 37.6523 3 35.1454 3C32.7249 3 32.7249 1 30.2181 1C27.7976 1 27.7976 3 25.2908 3C22.8703 3 22.8703 1 20.3635 1C17.943 1 17.943 3 15.5226 3C13.1022 3 13.1022 1 10.5953 1C8.34774 1 8.34774 3 5.92731 3C3.42043 3 3.42043 1 1 1" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/contact">
+            <button class="btn">Contact</button>
+          </a>
+        </nav>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <!-- Header -->
-      <div class="hero hero-contact"></div>
-      <!-- Content -->
-      <main>
+    </header>
+    <div class="overlay"></div>
+
+    <main class="page">
+
+      <section class="intro">
         <div>
           <h1>Contact</h1>
+          <p>Une question, besoin d'un renseignement ? Écrivez-nous un message.</p>
         </div>
-        <!-- Contact Form -->
-        <div class="contact">
-          <form
-            action="https://formspree.io/mamlesptitscoquelicots@orange.fr"
-            method="POST"
-          >
+      </section>
+
+      <section class="contact">
+        <div>
+          <div class="circle"></div>
+          <div class="cross"></div>
+          <form action="https://formspree.io/mamlesptitscoquelicots@orange.fr" method="POST">
             <input type="hidden" name="_language" value="fr" />
-            <div class="form-body">
-              <label>
-                <input
-                  type="text"
-                  name="Nom"
-                  id="sendername"
-                  placeholder="Nom"
-                  spellcheck="false"
-                />
-              </label>
-              <label class="field prepend-icon">
-                <input
-                  type="email"
-                  name="Email"
-                  id="contact_nom"
-                  placeholder="Email"
-                  spellcheck="false"
-                />
-              </label>
-              <label class="field prepend-icon">
-                <textarea
-                  name="Message"
-                  id="contact_email"
-                  placeholder="Message"
-                  rows="7"
-                ></textarea>
-              </label>
-            </div>
-            <div class="form-footer">
-              <button type="submit" class="btn">Envoyer</button>
-            </div>
+            <label for="name">Prénom et Nom</label>
+            <input type="text" name="name" id="name" spellcheck="false" required>
+            <label for="email">Email</label>
+            <input type="email" name="_replyto" id="email" spellcheck="false" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="7" required=""></textarea>
+            <label for="policy" class="checkbox">
+              <input type="checkbox" id="policy" required>
+              <svg viewBox="0 0 21 21"><path d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186"></path></svg>
+              <span>J'autorise ce site à conserver mes données transmises via ce formulaire. Aucune exploitation commerciale ne sera faite de celles-ci. Voir notre <a href="/politique-de-confidentialite">politique de confidentialité</a>.</span>
+            </label>
+            <button class="btn" type="submit" value="Envoyer">Envoyer</button>
           </form>
-          <div class="contact-infos">
-            <div>
-              <i class="ti-email"></i>
-              <h3>
-                Une question, un renseignement ?<br />N'hésitez-pas à nous écrire.
-              </h3>
+          <address>
+            <h2>Les p'tits Coquelicots</h2>
+            <div class="location">
+              <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c3.196 0 6 2.618 6 5.602 0 3.093-2.493 7.132-6 12.661-3.507-5.529-6-9.568-6-12.661 0-2.984 2.804-5.602 6-5.602m0-2c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+              38 bis avenue de St Cizy,<br/>
+              31220 Cazères-sur-Garonne
             </div>
-            <div>
-              <i class="ti-location-pin"></i>
-              <h3>38 bis avenue de St Cizy,<br />31220 Cazères-sur-Garonne</h3>
+            <div class="phone">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
+              <ul>
+                <li>
+                  Chrystelle Caron — 06 42 23 30 38
+                </li>
+                <li>
+                  Sylvie Bertolino — 07 60 13 10 59
+                </li>
+                <li>
+                  Roselyne Denis — 06 77 16 67 77
+                </li>
+              </ul>
             </div>
-            <div>
-              <i class="ti-mobile"></i>
-              <div>
-                <div class="numero">
-                  <span>Caron Chrystelle —</span>
-                  <h3>06 42 23 30 38</h3>
-                </div>
-                <div class="numero">
-                  <span>Bertolino Sylvie —</span>
-                  <h3>07 60 13 10 59</h3>
-                </div>
-                <div class="numero">
-                  <span>Denis Roselyne —</span>
-                  <h3>06 77 16 67 77</h3>
-                </div>
-              </div>
-            </div>
-            <div><span>Merci d'appeler entre 13h30 et 14h00</span></div>
+            <span>Merci d'appeler entre 13h30 et 14h00.</span>
+          </address>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <img src="img/logo-icon.svg" alt="Logo">
+      <div>
+        <ul>
+          <li><a href="/photos">Galerie d'images</a></li>
+          <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
+          <li><a href="/charte-de-fonctionnement">Charte de fonctionnement</a></li>
+          <li><a href="/politique-de-confidentialite">politique de confidentialité</a></li>
+          <li><a href="https://www.ladepeche.fr/article/2017/02/09/2513722-deux-passionnees-de-l-enfance-ouvrent-un-lieu-d-accueil.html" target="_blank">On parle de nous</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div>
+          <p>
+            ©2018-2021 Les P'tits Coquelicots. Fait avec <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.756 2.81C14.253 1.383 13.067.199 11.57.035 10.72-.045 9.867.011 9.088.4c-.612.306-1.102.818-1.542 1.347C7.003 1.104 6.405.528 5.613.23 5.137.049 4.62-.003 4.115 0c-.437.004-.878.047-1.295.188C2.055.446 1.415.982.937 1.643c-.14.195-.263.401-.367.617-.106.215-.196.439-.273.666-.676 2.237-.268 4.987 1.94 6.246.222.152.453.297.688.438.702.427 1.436.828 2.077 1.323.182.17.343.35.474.545.262.39.396.84.331 1.378.065.535-.417.918-.417 1.492.096.764 3.33-.974 3.604-1.153 2.28-1.334 4.595-3.056 5.5-5.694.148-.339.272-.688.37-1.045.323-1.183.299-2.49-.109-3.646" fill="#FF7B7B"/><path d="M14.006 3.025a2.13 2.13 0 0 0-.123-.618 1.916 1.916 0 0 0-.271-.506C12.935.993 11.528.712 10.373.993c-.448.126-.898.313-1.09.75-.064.189.192.313.32.25.835-.125 1.765-.076 2.518.251.19.083.367.182.53.3.546.388.801 1.014.93 1.64.256-.063.385-.375.406-.65.027-.168.033-.339.019-.508" fill="#FFF6F4"/></svg> par <a href="https://www.nicolasbertolino.com/" target="_blank" rel="noopener">Nicolas Bertolino</a> 
+          </p>
+          <div onclick="window.scroll({top:0, behavior:'smooth'});">
+            <img src="img/arrow-up.svg" alt="Retour en haut">
           </div>
         </div>
-      </main>
-      <!-- Footer -->
-      <footer>
-        <div>
-          <ul>
-            <li><a href="/photos">Photos</a></li>
-            <li><a href="/reglement-interieur">Règlement intérieur</a></li>
-            <li><a href="/projet-pedagogique">Projet pédagogique</a></li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.ladepeche.fr/article/2017/02/09/2513722-deux-passionnees-de-l-enfance-ouvrent-un-lieu-d-accueil.html"
-                >Ils parlent de nous</a
-              >
-            </li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Copyright -->
-        <p class="copyright">
-          ©2020 Les P'tits Coquelicots. Fait avec <i class="ti-heart"></i> par
-          <a href="https://www.nicolasbertolino.com">Nicolas Bertolino</a>
-        </p>
-        <!-- Back To Top -->
-        <a class="back-top" href="#">
-          <img src="assets/images/circle.svg" alt="circle-top" class="circle" />
-          <img src="assets/images/arrow.svg" alt="arrow-top" class="arrow" />
-        </a>
-      </footer>
-      <!-- Custom Cursor -->
-      <div class="cursor"></div>
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

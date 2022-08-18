@@ -953,6 +953,10 @@ header {
       @media (max-width: 1024px) {
         grid-template-columns: 1fr;
       }
+      .subtitle {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
       > ul {
         position: relative;
         @media (min-width: 1025px) {

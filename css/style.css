@@ -474,11 +474,11 @@ header > div .hamburger.isOpened span:nth-child(3) {
   }
 }
 
-.figure > div figure {
+.figure figure {
   margin: 0;
   position: relative;
 }
-.figure > div figure::before, .figure > div figure::after {
+.figure figure::before, .figure figure::after {
   content: "";
   position: absolute;
   top: 0;
@@ -486,27 +486,27 @@ header > div .hamburger.isOpened span:nth-child(3) {
   width: 100%;
   height: 100%;
 }
-.figure > div figure::before {
+.figure figure::before {
   border: 2px solid var(--color-text);
 }
-.figure > div figure::after {
+.figure figure::after {
   top: 0.5rem;
   left: 0.5rem;
   background-color: var(--color-text);
   z-index: -1;
 }
 @media (max-width: 419px) {
-  .figure > div figure::after {
+  .figure figure::after {
     top: 0.3rem;
     left: 0.3rem;
   }
 }
-.figure > div figure img {
+.figure figure img {
   aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.figure > div figure figcaption {
+.figure figure figcaption {
   position: absolute;
   top: 0;
   left: 2rem;
@@ -515,7 +515,7 @@ header > div .hamburger.isOpened span:nth-child(3) {
   font-family: var(--font-family-secondary);
   font-size: large;
 }
-.figure > div figure figcaption::before, .figure > div figure figcaption::after {
+.figure figure figcaption::before, .figure figure figcaption::after {
   content: "";
   position: absolute;
   top: 0;
@@ -523,16 +523,23 @@ header > div .hamburger.isOpened span:nth-child(3) {
   width: 100%;
   height: 100%;
 }
-.figure > div figure figcaption::before {
+.figure figure figcaption::before {
   background-color: var(--color-bg);
   border: 2px solid var(--color-text);
   z-index: -1;
 }
-.figure > div figure figcaption::after {
+.figure figure figcaption::after {
   top: 0.2rem;
   left: 0.2rem;
   background-color: var(--color-text);
   z-index: -2;
+}
+.figure.photos figure img {
+  aspect-ratio: 2/1;
+}
+.figure.photos .cross {
+  top: -1.5rem;
+  right: 5rem;
 }
 
 .about > div figure {

@@ -463,10 +463,43 @@ header {
 }
 
 .figure {
-  > div {
-    figure {
-      margin: 0;
-      position: relative;
+  figure {
+    margin: 0;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &::before {
+      border: 2px solid var(--color-text);
+    }
+    &::after {
+      top: 0.5rem;
+      left: 0.5rem;
+      background-color: var(--color-text);
+      z-index: -1;
+      @media (max-width: 419px) {
+        top: 0.3rem;
+        left: 0.3rem;
+      }
+    }
+    img {
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+    figcaption {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      transform: translateY(-50%);
+      padding: 0.6rem 2rem 0.2rem;
+      font-family: var(--font-family-secondary);
+      font-size: large;
       &::before,
       &::after {
         content: "";
@@ -477,51 +510,28 @@ header {
         height: 100%;
       }
       &::before {
+        background-color: var(--color-bg);
         border: 2px solid var(--color-text);
+        z-index: -1;
       }
       &::after {
-        top: 0.5rem;
-        left: 0.5rem;
+        top: 0.2rem;
+        left: 0.2rem;
         background-color: var(--color-text);
-        z-index: -1;
-        @media (max-width: 419px) {
-          top: 0.3rem;
-          left: 0.3rem;
-        }
+        z-index: -2;
       }
+    }
+  }
+
+  &.photos {
+    figure {
       img {
-        aspect-ratio: 3 / 2;
-        object-fit: cover;
+        aspect-ratio: 2 / 1;
       }
-      figcaption {
-        position: absolute;
-        top: 0;
-        left: 2rem;
-        transform: translateY(-50%);
-        padding: 0.6rem 2rem 0.2rem;
-        font-family: var(--font-family-secondary);
-        font-size: large;
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-        &::before {
-          background-color: var(--color-bg);
-          border: 2px solid var(--color-text);
-          z-index: -1;
-        }
-        &::after {
-          top: 0.2rem;
-          left: 0.2rem;
-          background-color: var(--color-text);
-          z-index: -2;
-        }
-      }
+    }
+    .cross {
+      top: -1.5rem;
+      right: 5rem;
     }
   }
 }
